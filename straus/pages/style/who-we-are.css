@@ -1,0 +1,117 @@
+.who-we-are-container {
+  display: grid;
+  height: 140vh;
+}
+.who-we-are-img {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 10vw;
+}
+
+.who-header {
+  text-align: center;
+  color: red;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  padding-bottom: 80px;
+}
+.who-text,
+.who-little-header {
+  padding: 0 6vw;
+  text-align: left;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+.who-little-header {
+  color: red;
+}
+.cities-who {
+  width: 400px;
+}
+.city-pic-container {
+  margin-top: 30px;
+}
+.city-pic-container p {
+  margin-bottom: -20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .who-text,
+  .who-little-header {
+    padding: 0 4vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .who-we-are-img {
+    width: 150px;
+    margin-top: 60px;
+    margin-left: 10vw;
+  }
+  .who-text,
+  .who-little-header {
+    width: 360px;
+    padding: 0;
+    margin-left: -30px;
+  }
+}
+@media (max-width: 900px) {
+  .city-pic-container img {
+    width: 300px;
+  }
+  .city-pic-container {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .who-we-are-img {
+    display: none;
+  }
+  .who-header {
+    margin-top: -100px;
+    padding-bottom: 30px;
+  }
+  .who-we-are-img {
+    display: none;
+  }
+  .who-we-are-container {
+    height: 195vh;
+  }
+  .who-text,
+  .who-little-header {
+    width: 550px;
+    margin-left: 0px;
+  }
+  .city-pic-container img {
+    width: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .who-header {
+    margin-top: -50px;
+  }
+  .who-text,
+  .who-little-header {
+    width: 460px;
+  }
+  .city-pic-container img {
+    width: 460px;
+  }
+  .who-we-are-container {
+    height: 200vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .who-text,
+  .who-little-header {
+    width: 320px;
+  }
+  .city-pic-container img {
+    width: 320px;
+  }
+  .who-we-are-container {
+    height: 210vh;
+  }
+}

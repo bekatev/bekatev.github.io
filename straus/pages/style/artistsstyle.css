@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.artists-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.artists-header h1 {
+  font-family: "Poppins", sans-serif;
+}
+.artists-container .col-sm-4 {
+  padding: 10px;
+}
+.artists-container .half-moon-link {
+  margin-top: 10px;
+}
+.artists-container .col-sm-6 {
+  padding: 0px 6vw;
+}
+.artists-container .col-sm-6 .artist-description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.artists-vids {
+  margin-top: 40px;
+}
+
+.social-links {
+  margin-left: -20px;
+}
+.social-links li {
+  list-style-type: none;
+  text-decoration: underline;
+  font-family: "Poppins", sans-serif;
+}
+.social-links li:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-agent {
+  margin-top: 50px;
+  margin-left: -20px;
+}
+.contact-agent li {
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+.contact-agent li a {
+  text-decoration: underline;
+  color: lightcoral;
+}
+.contact-agent li p {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.contact-agent li a:hover {
+  cursor: pointer;
+}
+.artists-roster-container {
+  height: 180vh;
+  display: grid;
+}
+.artists-button {
+  text-align: center;
+}
+.my-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 60px;
+  padding: 11px 60px;
+  margin: 30px 10px 30px 90px;
+  cursor: pointer;
+}
+.my-btn:focus {
+  outline: 0;
+}
+.my-btn:hover {
+  color: #000000;
+  background-color: #fff;
+  padding: 12px 61px;
+  margin: 28px 9px 29px 89px;
+  border: solid 1px #000;
+}
+footer {
+  margin-top: 30px;
+}
+@media (max-width: 1200px) {
+  .artists-container img {
+    width: 300px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .artists-roster-container {
+    height: 370vh;
+  }
+  .artists-header {
+    margin-top: -60px;
+  }
+}
+
+

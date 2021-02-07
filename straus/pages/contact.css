@@ -1,0 +1,147 @@
+.contact-header {
+  text-align: center;
+  color: red;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+
+.contact-container {
+  display: grid;
+  height: 155vh;
+}
+.contact-text {
+  font-family: "Poppins", sans-serif;
+}
+.contact-img {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 10vw;
+}
+.vl4 {
+  position: absolute;
+  border-left: 2px solid #424242;
+  height: 80vh;
+  margin-top: 200px;
+  margin-left: 20vw;
+}
+.contact-subscribe-header {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 150px;
+}
+.contact-subscribe-text {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+form {
+  justify-content: center;
+}
+.contact-button {
+  text-align: center;
+}
+.my-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 60px;
+  padding: 11px 30px;
+  margin: 30px 10px 10px 30px;
+  cursor: pointer;
+}
+.my-btn:focus {
+  outline: 0;
+}
+.my-btn:hover {
+  color: #000000;
+  background-color: #fff;
+  padding: 12px 31px;
+  margin: 29px 9px 9px 27px;
+  border: solid 1px #000;
+}
+label {
+  width: 400px;
+}
+.subscribe-em {
+  margin-top: 10px;
+}
+
+.contact-ps {
+  margin-top: 30px;
+}
+.google-maps {
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px;
+  width: 35vw;
+  height: 27vw;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.addresses {
+  margin-top: 70px;
+  margin-left: 50px;
+}
+@media (max-width: 992px) {
+  .google-maps {
+    margin-top: 200px;
+  }
+  .contact-img {
+    width: 150px;
+    margin-left: 10vw;
+  }
+}
+@media (max-width: 768px) {
+  .vl4 {
+    display: none;
+  }
+  .contact-img {
+    display: none;
+  }
+  .addresses {
+    margin: 0;
+    width: 400px;
+  }
+  .google-maps {
+    margin-left: -60px;
+    margin-top: 170px;
+  }
+  .contact-header {
+    margin-top: -100px;
+  }
+  .contact-subscribe-header {
+    margin-top: 250px;
+  }
+}
+@media (max-width: 576px) {
+  .google-maps {
+    width: 80vw;
+    height: 60vw;
+    margin-left: 30px;
+  }
+  .contact-header {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-subscribe-header {
+    font-size: 30px;
+  }
+  .contact-subscribe-text{
+    font-size: 10px; 
+  }
+  .sub-cont{
+    width: 90vw;
+  }
+  form{
+    width: 360px;
+  }
+}
+

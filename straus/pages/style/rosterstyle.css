@@ -1,0 +1,229 @@
+.col-sm-3 {
+  text-align: center;
+  width: 280px;
+  height: 280px;
+}
+.container .row .col-sm-3 {
+  padding: 0;
+  margin-bottom: 4px;
+}
+.container .row a {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+/*Hovers*/
+.container .row a:hover {
+  text-decoration: none;
+}
+.band-pic:hover {
+  position: static;
+  transform: scale(1.06);
+  transition: 0.7s;
+  background-repeat: no-repeat;
+}
+
+.band-pic {
+  position: relative;
+}
+
+.band-pic:after {
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(40%);
+}
+
+.band-pic:hover:after {
+  opacity: 0.4;
+  transform: translateY(0%);
+}
+
+.col-sm-3 img {
+  width: 100%;
+  height: auto;
+}
+
+.rosterHeader {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  transform: translateX(20%);
+  position: relative;
+  margin-top: -20px;
+}
+
+.artist-box {
+  position: relative;
+  text-align: center;
+}
+.artist-box h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  color: #424242;
+  position: absolute;
+}
+
+.artist-box img {
+  visibility: hidden;
+}
+/*Artist box hovers*/
+.artist-box:hover {
+  transform: scale(1.06);
+  transition: 0.7s;
+  background-repeat: no-repeat;
+}
+.artist-box:after {
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(40%);
+}
+.artist-box:hover:after {
+  opacity: 0.4;
+  transform: translateY(0%);
+}
+
+/*Band Names*/
+.bedford-falls {
+  top: 110px;
+  left: 6vw;
+}
+.mokumoku {
+  top: 110px;
+  left: 6vw;
+}
+.half-moon {
+  top: 110px;
+  left: 6vw;
+}
+.monster-lobsters {
+  top: 110px;
+  left: 3vw;
+}
+
+@media (max-width: 1200px) {
+  .bedford-falls {
+    top: 90px;
+    left: 4vw;
+  }
+  .mokumoku {
+    top: 90px;
+    left: 5vw;
+  }
+  .half-moon {
+    top: 90px;
+    left: 5vw;
+  }
+  .monster-lobsters {
+    top: 90px;
+    left: 1vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .artist-box h1 {
+    font-size: 17px;
+  }
+  .bedford-falls {
+    top: 65px;
+    left: 3.7vw;
+  }
+  .mokumoku {
+    top: 65px;
+    left: 4.7vw;
+  }
+  .half-moon {
+    top: 65px;
+    left: 5.2vw;
+  }
+  .monster-lobsters {
+    top: 65px;
+    left: 0.9vw;
+  }
+}
+@media (max-width: 768px) {
+  .rosterHeader {
+    height: fit-content;
+    margin-top: -150px;
+    transform: translateX(5%);
+  }
+  .container {
+    margin-top: -150px;
+  }
+  .col-sm-3 {
+    margin-left: 30px;
+    margin-right: -30px;
+    margin-bottom: 30px;
+  }
+  .main-container {
+    height: 190vh;
+  }
+  .artist-box h1 {
+    font-size: 23px;
+  }
+  .bedford-falls {
+    top: 107px;
+    left: 9vw;
+  }
+  .mokumoku {
+    top: 107px;
+    left: 11vw;
+  }
+  .half-moon {
+    top: 107px;
+    left: 10vw;
+  }
+  .monster-lobsters {
+    top: 107px;
+    left: 3vw;
+  }
+}
+@media (max-width: 580px) {
+  .main-container {
+    height: 150vh;
+  }
+  .col-sm-3 {
+    width: 200px;
+    height: 200px;
+  }
+  .artist-box h1 {
+    font-size: 16px;
+  }
+  .bedford-falls {
+    top: 70px;
+    left: 9vw;
+  }
+  .mokumoku {
+    top: 70px;
+    left: 11vw;
+  }
+  .half-moon {
+    top: 70px;
+    left: 11.5vw;
+  }
+  .monster-lobsters {
+    top: 70px;
+    left: 3vw;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .main-container {
+    height: 280vh;
+  }
+}
