@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/php-style.css?v=<?php echo time(); ?>">
+    <link rel="icon" href="../bas/assets/img/icon.png" type="image/png">
+    <title>Login - Spotify</title>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="loginHeader">
+        <a href="../bas/index.html"><img src="../bas/assets/img/logo-black.png" alt="logo" width="200px"></a>
+    </div>
+    <hr>
+    <!--Main-->
+    <div class="loginContainer">
+        <h1>To continue, log in to Spotify.</h1>
+        <button class="login-fb-btn">CONTINUE WITH FACEBOOK</button>
+        <button class="login-apple-btn">CONTINUE WITH APPLE</button>
+        <button class="login-google-btn">CONTINUE WITH GOOGLE</button>
+        <h2><span>OR</span></h2>
+        <form action="config/login.con.php" method="post">
+            <div class="form-cont">
+                <div class="form-input">
+                    <label class="label-header">Username</label>
+                    <input type="text" name="username">
+                </div>
+                <div class="form-input">
+                    <label class="label-header">Password</label>
+                    <input type="password" name="password">
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <div class="login-form">
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <button class="login-btn" type="submit" name="login">Log In</button>
+                </div>
+        </form>
+        <hr>
+        <h3>Don't have an account?</h3>
+        <a href="signup.php"><button class="login-signup-btn">SIGN UP FOR SPOTIFY</button></a>
+    </div>
+
+</body>
+
+</html>

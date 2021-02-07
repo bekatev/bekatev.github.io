@@ -1,0 +1,483 @@
+/*General*/
+body {
+  padding: 0;
+  margin: 0;
+}
+.profile {
+  text-align: center;
+  margin-top: 40px;
+}
+.profile h1 {
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  font-size: 100px;
+  color: #808080;
+}
+.signupContainer {
+  text-align: center;
+  margin: auto;
+  width: 420px;
+}
+img {
+  margin: 30px 0;
+}
+.label-header {
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.label-text {
+  font-weight: lighter;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+.form-input {
+  display: grid;
+  text-align: left;
+  justify-content: center;
+}
+.form-input input {
+  padding: 10px;
+  width: 400px;
+}
+.check {
+  display: flex;
+  text-align: left;
+  margin: 25px auto 8px auto;
+}
+.check input {
+  width: 50px;
+}
+.signupContainer h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #000;
+}
+.signupContainer h2 {
+  font-family: "Poppins", sans-serif;
+  color: #808080;
+  font-size: 15px;
+  border-bottom: 1px solid #808080;
+  margin: 30px 110px 30px 110px;
+  line-height: 0.1em;
+}
+.signupContainer h2 span {
+  background: #fff;
+  padding: 0 20px;
+}
+.signupContainer h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: -10px;
+}
+.form-input label {
+  margin: 25px 0 8px 0;
+}
+.check label {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+small {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  margin-top: 15px;
+}
+.form-birth {
+  display: flex;
+  text-align: left;
+  margin: 25px auto 8px auto;
+}
+.form-dropdown {
+  display: block;
+  width: 150px;
+}
+.form-day {
+  display: block;
+  margin-right: 20px;
+  margin-left: 40px;
+}
+.form-year {
+  display: block;
+}
+.birthday-input {
+  display: grid;
+  text-align: left;
+  justify-content: center;
+}
+.birthday-input input {
+  padding: 10px;
+  width: 80px;
+}
+.birthday-input label {
+  margin: 25px 0 0 0;
+}
+select {
+  width: 180px;
+  height: 40px;
+  margin-right: 10px;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  margin: 25px 0 10px 0;
+}
+p span {
+  text-decoration: underline;
+}
+p a {
+  color: #34d860;
+}
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  margin: 25px 0 180px 0;
+  font-weight: lighter;
+}
+h4 span {
+  text-decoration: underline;
+}
+h4 a {
+  color: #34d860;
+}
+.form-gender {
+  display: block;
+}
+.form-gender div {
+  display: flex;
+  width: 350px;
+  justify-content: left;
+  margin: 15px 0;
+}
+/*BUTTONS*/
+.main-btn {
+  font-family: "Epilogue", sans-serif;
+  font-size: 15px;
+  color: #fdfffe;
+  background-color: #2bba54;
+  border: none;
+  border-radius: 60px;
+  padding: 15px 180px;
+  cursor: pointer;
+}
+.main-btn:focus {
+  outline: 0;
+}
+.main-btn:hover {
+  color: #e3faee;
+  background-color: #34d860;
+  padding: 16px 181px;
+  margin: -1px -1px;
+}
+.fb-btn {
+  font-family: "Epilogue", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #3a5998;
+  border: none;
+  border-radius: 60px;
+  padding: 15px 110px;
+  cursor: pointer;
+}
+.fb-btn:focus {
+  outline: 0;
+}
+.fb-btn:hover {
+  color: #fdfefe;
+  background-color: #6b82b1;
+  padding: 16px 111px;
+  margin: -1px -1px;
+}
+::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+/*LOGIN STYLE*/
+/*CHECKBOX*/
+.login-form {
+  display: flex;
+  margin-top: 30px;
+}
+.login-form label {
+  margin-right: 70px;
+  margin-top: 18px;
+}
+.login-form input {
+  margin-top: 20px;
+  margin-right: 5px;
+}
+.checkbox-container {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #676a6d;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: #34d860 solid 1px;
+  border-radius: 3px;
+  background-color: #eee;
+}
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #1d883e;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*LOGIN CONTAINER*/
+.loginContainer {
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 40%;
+  text-align: center;
+}
+.loginHeader {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.loginHeader img {
+  margin-bottom: 10px;
+}
+hr {
+  color: #000;
+  margin-top: 20px;
+}
+.loginContainer {
+  text-align: center;
+  margin: auto;
+  width: 420px;
+}
+.form-input a{
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #6e7173;
+  font-size: 13px;
+}
+.form-input a:hover{
+  color: #2cab58;
+}
+.login-btn {
+  font-family: "Epilogue", sans-serif;
+  font-size: 15px;
+  color: #fdfffe;
+  background-color: #1d883e;
+  border: none;
+  border-radius: 60px;
+  padding: 15px 80px;
+  cursor: pointer;
+}
+.login-btn:focus {
+  outline: 0;
+}
+.login-btn:hover {
+  color: #e3faee;
+  background-color: #34d860;
+  padding: 16px 81px;
+  margin: -1px -1px;
+}
+.login-fb-btn {
+  font-family: "Epilogue", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #3b5a99;
+  border: none;
+  border-radius: 60px;
+  padding: 15px 100px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.login-fb-btn:focus {
+  outline: 0;
+}
+.login-fb-btn:hover {
+  color: #fdfefe;
+  background-color: #6b82b1;
+  padding: 16px 101px;
+  margin: -1px -1px 9px -1px;
+}
+.login-apple-btn {
+  font-family: "Epilogue", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #000;
+  border: none;
+  border-radius: 60px;
+  padding: 15px 115px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.login-apple-btn:focus {
+  outline: 0;
+}
+.login-apple-btn:hover {
+  color: #fdfefe;
+  background-color: #333333;
+  padding: 16px 116px;
+  margin: -1px -1px 9px -1px;
+}
+.login-google-btn {
+  font-family: "Epilogue", sans-serif;
+  font-size: 15px;
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 2px #616467;
+  border-radius: 60px;
+  padding: 15px 105px;
+  cursor: pointer;
+}
+.login-google-btn:focus {
+  outline: 0;
+}
+.login-google-btn:hover {
+  color: #fdfefe;
+  background-color: #616467;
+  padding: 16px 106px;
+  margin: -1px -1px;
+}
+.login-signup-btn {
+  font-family: "Epilogue", sans-serif;
+  font-size: 15px;
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 2px #616467;
+  border-radius: 60px;
+  padding: 15px 105px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.login-signup-btn:focus {
+  outline: 0;
+}
+.login-signup-btn:hover {
+  color: #fdfefe;
+  background-color: #616467;
+  padding: 16px 106px;
+  margin: -1px -1px 9px -1px;
+}
+
+.loginContainer h1 {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  white-space: nowrap;
+  color: #000;
+}
+.loginContainer h3 {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  white-space: nowrap;
+  color: #000;
+}
+.loginContainer h2 {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-size: 15px;
+  border-bottom: 1px solid #808080;
+  margin: 30px 10px;
+  line-height: 0.1em;
+}
+.loginContainer h2 span {
+  background: #fff;
+  padding: 0 20px;
+}
+/*Media Query*/
+@media (max-width: 440px) {
+  /*SIGNUP MEDIA*/
+  .signupContainer {
+    width: 90vw;
+  }
+  .form-input input {
+    width: 90vw;
+  }
+  .birthday-input input{
+    width: 45px;
+  }
+  select{
+    width: 140px;
+  }
+  .main-btn {
+    padding: 15px 120px;
+  }
+  .main-btn:hover {
+    padding: 16px 121px;
+  } 
+  .fb-btn {
+    padding: 15px 70px;
+  }
+  .fb-btn:hover {
+    padding: 16px 71px;
+  }
+  /*LOGIN MEDIA*/
+  .loginContainer {
+    width: 90vw;
+  }
+  .login-fb-btn {
+    padding: 15px 50px;
+  }
+  .login-fb-btn:hover {
+    padding: 16px 51px;
+  }
+  .login-apple-btn {
+    padding: 15px 66px;
+  }
+  .login-apple-btn:hover {
+    padding: 16px 67px;
+  }
+  .login-google-btn {
+    padding: 15px 58px;
+  }
+  .login-google-btn:hover {
+    padding: 16px 59px;
+  }
+  .login-signup-btn {
+    padding: 15px 60px;
+  }
+  .login-signup-btn:hover {
+    padding: 16px 61px;
+  }
+  .login-btn {
+    padding: 15px 40px;
+  }
+  .login-btn:hover {
+    padding: 16px 41px;
+  }
+}

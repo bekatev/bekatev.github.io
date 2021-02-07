@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/php-style.css">
+    <link rel="icon" href="../bas/assets/img/icon.png" type="image/png">
+
+    <title>Sign up - Spotify</title>
+</head>
+<body>
+    <!--Main-->
+    <div class="signupContainer">
+        <a href="#"><img src="../bas/assets/img/logo-black.png" alt="logo" width="130px"></a>
+        <h1>Sign up for free to start listening.</h1>
+        <button class="fb-btn">SIGN UP WITH FACEBOOK</button>
+        <h2><span>or</span></h2>
+        <h3>Sign up with your email address
+        </h3>
+        <form action="config/signup.con.php" method="post">
+            <div class="form-cont">
+                <div class="form-input">
+                    <label class="label-header">What's your email?</label>
+                    <input type="text" name="email" placeholder="Enter your email.">
+                </div>
+                <div class="form-input">
+                    <label class="label-header">Confirm your email</label>
+                    <input type="text" name="email2" placeholder="Enter your email again">
+                </div>
+                <div class="form-input">
+                    <label class="label-header">Create a password</label>
+                    <input type="password" name="password" placeholder="Create a password">
+                </div>
+                <div class="form-input">
+                    <label class="label-header">What should we call you?</label>
+                    <input type="text" name="username" placeholder="Enter a profile name">
+                    <small class="label-text">This appears on your profile.</small>
+                </div>
+                <div class="birthday-input">
+                    <label class="label-header">What's your date of birth?</label>
+                    <div class="form-birth">
+                        <div class="form-dropdown">
+                            <label class="label-text">Month</label>
+                            <div>
+                                <select>
+                                    <option value="" disabled selected>Month</option>
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-day">
+                            <label class="label-text">Day</label>
+                            <div>
+                                <input type="text" placeholder="DD">
+                            </div>
+                        </div>
+                        <div class="form-year">
+                            <label class="label-text">Year</label>
+                            <div>
+                                <input type="text" placeholder="YYYY">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-gender">
+                    <div>
+                        <label class="label-header">What's your gender?</label>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="radio">
+                            <label class="label-text">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio">
+                            <label class="label-text">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio">
+                            <label class="label-text">Non-binary</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="check">
+                    <input type="checkbox">
+                    <label>Share my registration data with Spotify's content providers for marketing purposes.</label>
+                </div>
+            </div>
+            <p>By clicking on Sign up, you agree to Spotify's <span><a href="#">Terms and Conditions of Use</a></span>.</p>
+            <p>To learn more about how Spotify collects, uses, shares and protects your personal data please read Spotify's <span><a href="#">Privacy Policy</a></span>.</p>
+            <button class="main-btn" type="submit" name="signup">Sign Up</button>
+
+        </form>
+
+        <h4>Have an account? <span><a href="login.html">Log in</a></span>.</h4>
+    </div>
+
+</body>
+
+</html>
