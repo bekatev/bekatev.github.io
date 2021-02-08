@@ -36,8 +36,8 @@
   margin-left: 20vw;
 }
 @media (min-width: 1500px) {
-  .talent-container {
-    width: 600px;
+  .talent-text {
+    padding: 0 10vw;
   }
 }
 
