@@ -89,6 +89,7 @@
 }
 footer {
   margin-top: 30px;
+  position: absolute;
 }
 @media (max-width: 1200px) {
   .artists-container img {
@@ -105,5 +106,20 @@ footer {
     margin-top: -60px;
   }
 }
+
+@media (max-width: 420px) {
+  .artists-roster-container {
+    height: 1100px;
+  }
+}
+@media (max-width: 280px) {
+  .artists-container{
+    width: 275px;
+  }
+  .artist-main-pic img{
+    width: 250px;
+  }
+}
+
 
 

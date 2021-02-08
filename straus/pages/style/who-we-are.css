@@ -103,7 +103,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .who-text,
   .who-little-header {
     width: 320px;
@@ -112,6 +112,30 @@
     width: 320px;
   }
   .who-we-are-container {
-    height: 210vh;
+    height: 1400px;
+  }
+}
+@media (max-width: 320px) {
+  .who-text,
+  .who-little-header {
+    width: 270px;
+  }
+  .city-pic-container img {
+    width: 270px;
+  }
+  .who-we-are-container {
+    height: 1450px;
+  }
+}
+@media (max-width: 280px) {
+  .who-text,
+  .who-little-header {
+    width: 230px;
+  }
+  .city-pic-container img {
+    width: 230px;
+  }
+  .who-we-are-container {
+    height: 1600px;
   }
 }

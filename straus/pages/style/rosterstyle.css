@@ -222,8 +222,19 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .main-container {
     height: 280vh;
+  }
+}
+@media (max-width: 414px) {
+  .main-container {
+    height: 140vh;
+  }
+}
+@media (max-width: 375px) {
+  .main-container {
+    height: 1900px;
+    padding: 0;
   }
 }

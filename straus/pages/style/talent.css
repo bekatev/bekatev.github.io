@@ -94,8 +94,25 @@
     height: 160vh;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .talent-container {
-    height: 230vh;
+    height: 1300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .talent-container {
+    height: 1500px;
+  }
+}
+
+@media (max-width: 320px) {
+  .talent-container {
+    height: 1700px;
+  }
+}
+@media (max-width: 280px) {
+  .talent-container {
+    height: 1850px;
   }
 }

@@ -130,7 +130,7 @@ label {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .contact-subscribe-header {
     font-size: 30px;
   }
@@ -141,7 +141,50 @@ label {
     width: 90vw;
   }
   form{
+    width: 410px;
+  }
+  .contact-container {
+    height: 1100px;
+  }
+}
+@media (max-width: 375px) {
+  .sub-cont{
+    width: 90vw;
+  }
+  form{
     width: 360px;
+  }
+}
+@media (max-width: 320px) {
+  .cont-cont{
+    width: 300px;
+  }
+  .google-maps{
+    margin-left: 0px;
+  }
+  .contact-subscribe-header {
+    font-size: 30px;
+  }
+  .contact-subscribe-text{
+    font-size: 10px; 
+  }
+  .sub-cont{
+    width: 270px;
+  }
+  form{
+    width: 300px;
+  }
+}
+
+@media (max-width: 280px) {
+  .cont-cont{
+    width: 260px;
+  }
+  .sub-cont{
+    width: 250px;
+  }
+  form{
+    width: 260px;
   }
 }
 
