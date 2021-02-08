@@ -35,6 +35,12 @@
   margin-top: 200px;
   margin-left: 20vw;
 }
+@media (min-width: 1500px) {
+  .talent-container {
+    width: 600px;
+  }
+}
+
 @media (max-width: 1200px) {
   .talent-img {
     width: 130px;
