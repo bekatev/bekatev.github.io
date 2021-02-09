@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 .main-container {
-  height: 110vh;
+  height: 115vh;
   display: grid;
 }
 footer {
