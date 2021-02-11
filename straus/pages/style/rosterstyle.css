@@ -1,3 +1,11 @@
+.rost-cont{
+  min-height: 120vh;
+  overflow: visible;
+}
+footer{
+  height: 40px;
+  position: static;
+}
 .col-sm-3 {
   text-align: center;
   width: 280px;
@@ -57,7 +65,7 @@
   font-size: 50px;
   transform: translateX(20%);
   position: relative;
-  margin-top: -20px;
+  margin-top: -50px;
 }
 
 .artist-box {

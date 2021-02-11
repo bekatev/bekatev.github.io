@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .artists-roster-container{
-  min-height: 195vh;
+  min-height: 210vh;
   overflow: visible;
 }
 .artists-header {
@@ -10,6 +10,7 @@
 }
 .artists-header h1 {
   font-family: "Poppins", sans-serif;
+  margin-top: -80px;
 }
 .artists-container .col-sm-4 {
   padding: 10px;
