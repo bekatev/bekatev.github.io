@@ -13,9 +13,9 @@ body {
   height: 115vh;
   display: grid;
 }
-footer {
-  height: 8vh;
-  width: 100vw;
+footer{
+  height: 80px;
+  position: absolute;
 }
 .vl2 {
   border-left: 2px solid #424242;
@@ -35,7 +35,7 @@ footer {
   margin-left: auto;
   height: 10vh;
   padding: 3vh 0 0 0;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   z-index: 1;
 }
 .large-nav a {

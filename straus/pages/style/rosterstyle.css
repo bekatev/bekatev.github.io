@@ -1,10 +1,10 @@
 .rost-cont{
-  min-height: 120vh;
+  min-height: 130vh;
   overflow: visible;
 }
 footer{
-  height: 40px;
-  position: static;
+  height: 80px;
+  position: absolute;
 }
 .col-sm-3 {
   text-align: center;

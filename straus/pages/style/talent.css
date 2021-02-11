@@ -10,12 +10,16 @@
 
 .talent-container {
   display: grid;
-  height: 150vh;
+  min-height: 150vh;
 }
 .talent-text {
   padding: 0 24vw;
   text-align: center;
   justify-content: center;
+}
+footer{
+  height: 80px;
+  position: absolute;
 }
 .talent-container p {
   font-family: "Poppins", sans-serif;

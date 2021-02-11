@@ -7,7 +7,7 @@
 
 .contact-container {
   display: grid;
-  height: 160vh;
+  min-height: 160vh;
 }
 .contact-text {
   font-family: "Poppins", sans-serif;
@@ -16,6 +16,10 @@
   position: absolute;
   margin-top: 60px;
   margin-left: 10vw;
+}
+footer{
+  height: 80px;
+  position: absolute;
 }
 .vl4 {
   position: absolute;

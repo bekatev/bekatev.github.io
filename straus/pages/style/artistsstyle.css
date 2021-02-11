@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .artists-roster-container{
-  min-height: 210vh;
-  overflow: visible;
+  min-height: 225vh;
 }
 .artists-header {
   text-align: center;
@@ -93,6 +92,7 @@
   border: solid 1px #000;
 }
 footer{
+  height: 80px;
   position: absolute;
 }
 @media (max-width: 1200px) {

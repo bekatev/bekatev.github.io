@@ -1,6 +1,6 @@
 .who-we-are-container {
   display: grid;
-  height: 140vh;
+  min-height: 140vh;
 }
 .who-we-are-img {
   position: absolute;
