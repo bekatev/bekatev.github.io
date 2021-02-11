@@ -4,6 +4,7 @@
 }
 footer{
   height: 80px;
+  width: 100vw;
   position: absolute;
 }
 .col-sm-3 {

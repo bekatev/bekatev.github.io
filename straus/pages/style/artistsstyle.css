@@ -93,6 +93,7 @@
 }
 footer{
   height: 80px;
+  width: 100vw;
   position: absolute;
 }
 @media (max-width: 1200px) {
