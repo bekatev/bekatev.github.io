@@ -22,7 +22,7 @@ if(isset($_POST["confirm"])){
     //subscribes the user
     else{
         subscribe($db, $email);
-        header("location: ../index.html", true, 301);
+        header("location: ../index.html");
         exit();
     }
 } 
