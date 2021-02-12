@@ -69,7 +69,7 @@ footer{
     margin-top: -70px;
   }
   .talent-container {
-    height: 155vh;
+    min-height: 155vh;
   }
   .talent-text {
     padding: 0 15vw;
@@ -86,7 +86,7 @@ footer{
     margin-top: -120px;
   }
   .talent-container {
-    height: 140vh;
+    min-height: 150vh;
   }
 }
 @media (max-width: 680px) {
@@ -94,7 +94,7 @@ footer{
     margin-top: -120px;
   }
   .talent-container {
-    height: 150vh;
+    min-height: 160vh;
   }
 }
 @media (max-width: 576px) {
@@ -102,18 +102,18 @@ footer{
     margin-top: -80px;
   }
   .talent-container {
-    height: 160vh;
+    min-height: 170vh;
   }
 }
 @media (max-width: 440px) {
   .talent-container {
-    height: 1300px;
+    min-height: 1300px;
   }
 }
 
 @media (max-width: 375px) {
   .talent-container {
-    height: 1500px;
+    min-height: 1500px;
   }
 }
 
@@ -124,6 +124,6 @@ footer{
 }
 @media (max-width: 280px) {
   .talent-container {
-    height: 1850px;
+    min-height: 1850px;
   }
 }

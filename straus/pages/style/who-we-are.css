@@ -103,7 +103,7 @@ footer{
     width: 460px;
   }
   .who-we-are-container {
-    height: 200vh;
+    min-height: 200vh;
   }
 }
 
@@ -116,7 +116,7 @@ footer{
     width: 320px;
   }
   .who-we-are-container {
-    height: 1400px;
+    min-height: 1400px;
   }
 }
 @media (max-width: 320px) {
@@ -128,7 +128,7 @@ footer{
     width: 270px;
   }
   .who-we-are-container {
-    height: 1450px;
+    min-height: 1450px;
   }
 }
 @media (max-width: 280px) {
@@ -140,6 +140,6 @@ footer{
     width: 230px;
   }
   .who-we-are-container {
-    height: 1600px;
+    min-height: 1600px;
   }
 }

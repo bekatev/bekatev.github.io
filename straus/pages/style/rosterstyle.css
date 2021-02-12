@@ -203,7 +203,7 @@ footer{
 }
 @media (max-width: 580px) {
   .main-container {
-    height: 150vh;
+    min-height: 150vh;
   }
   .col-sm-3 {
     width: 200px;
@@ -232,17 +232,17 @@ footer{
 
 @media (max-width: 420px) {
   .main-container {
-    height: 280vh;
+    min-height: 280vh;
   }
 }
 @media (max-width: 414px) {
   .main-container {
-    height: 140vh;
+    min-height: 140vh;
   }
 }
 @media (max-width: 375px) {
   .main-container {
-    height: 1900px;
+    min-height: 1900px;
     padding: 0;
   }
 }
