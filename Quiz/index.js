@@ -11,72 +11,72 @@ let answerArr = [];
 //Question data
 const questions = [
     [
-        'ველოსიპედის ბორბალი ყოველ 20 წამში, 60 ბრუნს ასრულებს. რისი ტოლია მისი ბრუნვის პერიოდი?',
-        ['3 წმ', false],
-        ['1/3 წმ', true],
-        ['6 წმ', false],
-        ['1/6 წმ', false],
+        'question 1?',
+        ['3', false],
+        ['true', true],
+        ['6', false],
+        ['1/6', false],
     ],
     [
-        'საათის წამების ისარი მოძრაობს 6.28 სმ/წმ სიჩქარით. გამოთვალე ისრის სიგრძე.',
-        ['60 სმ', true],
-        ['20 სმ', false],
-        ['40 სმ', false],
-        ['35 სმ', false],
+        'question 2?',
+        ['true', true],
+        ['20', false],
+        ['40', false],
+        ['35', false],
     ],
     [
-        'რამდენი ჰერცია 120 ბრ/წთ?',
+        'question 3?',
         ['60 ჰც', false],
         ['120 ჰც', false],
         ['4 ჰც', false],
-        ['2 ჰც', true],
+        ['true', true],
     ],
     [
-        '1 მ სიგრძის თოკზე გამობმული სხეული ბრუნავს ვერტიკალურ სიბრტყეში 3.14 წმ პერიოდით. იპოვეთ რა სიმაღლემდე ავარდება სხეული, თუ თოკს მოწყდა მაშნ, როცა მისი სიჩქარე ვერტიკალურად ზევით იყო მიმართული.',
+        'question 4?',
         ['0.1 მ', false],
-        ['0.2 მ', true],
+        ['true', true],
         ['0.4 მ', false],
         ['1 მ', false],
     ],
     [
-        'რისი ტოლია ეკვატორზე მყოფი ადამიანის სიჩქარე დედამიწის ცენტრის მიმართ, თუ დედამიწის რადიუსია 6400 კმ? თავისუფალი ვარდნის აჩქარება ჩათვალე 10 მ/წმ^2-ის ტოლად.',
+        'question 5?',
         ['16 კმ/წმ', false],
-        ['8 კმ/წმ', true],
+        ['true', true],
         ['4 კმ/წმ', false],
         ['20 კმ/წმ', false],
     ],
     [
-        '20 სმ რადიუსის დისკოზე დამაგრებულია 12 სმ რადიუსის დისკო. რისი ტოლია პატარა დისკოს სიხშირე, თუ დიდი დისკოს სიხშირეა 2 ჰც?',
-        ['2 ჰც', true],
+        'question 6?',
+        ['true', true],
         ['4 ჰც', false],
         ['3 ჰც', false],
         ['8 ჰც', false],
     ],
     [
-        'გამოთვალე 2 მ რადიუსის წრეზე მოძრავი სხეულის ცენტრისკენული აჩარება, თუ მისი სიხშირეა 4 ჰც.',
+        'question 7?',
         ['1435 მ/წმ^2', false],
         ['1342 მ/წმ^2', false],
         ['1155  მ/წმ^2', false],
-        ['1262 მ/წმ^2', true],
+        ['true', true],
     ],
     [
-        '8?',
+        'question 8?',
         ['meewo', false],
-        ['MMMMMM', true],
+        ['true', true],
         ['comooon', false],
         ['BOjnjnj', false],
     ],
     [
-        '9?',
+        'question 9?',
         ['TOM', false],
         ['NO', false],
         ['5', false],
-        ['MMMMMM', true],
+        ['true', true],
     ],
     [
-        '10?',
+        'question 10?',
         ['meewo', false],
-        ['MMMMMM', true],
+        ['true', true],
         ['comooon', false],
         ['BOjnjnj', false],
     ],
@@ -93,7 +93,7 @@ Using questionCount parameters to guess which questions should be displayed
 function setQuestion() {
     let questionNumber = questionCount + 1;
     document.getElementById("question").innerHTML = questions[questionCount][0]
-    document.getElementById("questionNum").innerHTML = "შეკითხვა " + questionNumber + " / 10 <br><br>";
+    document.getElementById("questionNum").innerHTML = "Question " + questionNumber + " / 10 <br><br>";
     let questionProgress = (questionNumber / questions.length) * 100;
     document.getElementById("question-progress").value = questionProgress;
     document.getElementById("answer1").innerHTML = questions[questionCount][1][0];
@@ -211,10 +211,10 @@ function assess(int){
     console.log(results);
     let name = findFirstName(username);
     if(int <= 4){
-        document.getElementById("finalScore").innerHTML = "უკეთესადაც შეგეძლო " + name + "!<br><br>" + "<h5>" + "შენი საბოლოო ქულაა " + "</h5>" + "<br>" + score + "/10";
+        document.getElementById("finalScore").innerHTML = "You Could do better " + name + "!<br><br>" + "<h5>" + "Your final score is " + "</h5>" + "<br>" + score + "/10";
     } else  if(int > 4 && int <= 7){
-        document.getElementById("finalScore").innerHTML = "კარგი შედეგია " + name + "!<br><br>" + "<h5>" + "შენი საბოლოო ქულაა " + "</h5>" + "<br>" + score + "/10";
-    } else document.getElementById("finalScore").innerHTML = "ძალიან კარგი შედეგია " + name + "!<br><br>" + "<h5>" + "შენი საბოლოო ქულაა " + "</h5>" + "<br>" + score + "/10";
+        document.getElementById("finalScore").innerHTML = "Good job " + name + "!<br><br>" + "<h5>" + "Your final score is " + "</h5>" + "<br>" + score + "/10";
+    } else document.getElementById("finalScore").innerHTML = "Great " + name + "!<br><br>" + "<h5>" + "Your final score is " + "</h5>" + "<br>" + score + "/10";
 }
   
 /*
@@ -253,8 +253,8 @@ After submiting the answers, answerArr and real answers will be compared to each
 Defining needed colors
 */
 const FULL_ARRAY = 283;
-const ORANGE = 6;
-const RED = 3;
+const ORANGE = 40;
+const RED = 10;
 
 const CIRCLE_COLORS = {
   info: {
@@ -270,7 +270,7 @@ const CIRCLE_COLORS = {
   }
 };
 
-const TIME_LIMIT = 10;
+const TIME_LIMIT = 60;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
