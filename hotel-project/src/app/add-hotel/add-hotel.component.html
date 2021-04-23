@@ -1,0 +1,268 @@
+<div class="container my-5 myDiv">
+  <h1>Add hotel:</h1>
+
+
+  <form class="example-form" #hotelForm="ngForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width">
+      <mat-label>hotel Name:</mat-label>
+      <input matInput placeholder="Name:" value="Name:" id="hotelName" name="name" [(ngModel)]="hotel.name">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>hotel Location:</mat-label>
+      <input matInput placeholder="Location:" value="Location:" id="hotelLocation" name="location"
+        [(ngModel)]="hotel.location">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Price:</mat-label>
+      <input matInput type="number" matInput placeholder="Price:" value="Price:" id="hotelPrice" name="price"
+        [(ngModel)]="hotel.price">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Main Image URL:</mat-label>
+      <input matInput type="text" matInput placeholder="URL:" value="URL:" id="imgURL" name="imgURL"
+        [(ngModel)]="hotel.imgURL">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Second URL:</mat-label>
+      <input matInput type="text" matInput placeholder="URL:" value="URL:" id="imgURL1" name="imgURL1"
+        [(ngModel)]="hotel.imgURL1">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Third URL:</mat-label>
+      <input matInput type="text" matInput placeholder="URL:" value="URL:" id="imgURL2" name="imgURL2"
+        [(ngModel)]="hotel.imgURL2">
+    </mat-form-field>
+    <br>
+
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Description:</mat-label>
+      <textarea matInput matInput placeholder="Description:" value="Description:" id="hotelDescription"
+        name="description" [(ngModel)]="hotel.description"></textarea>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Rooms:</mat-label>
+      <input type="number" matInput matInput placeholder="Rooms:" value="Rooms:" id="hotelRooms" name="rooms"
+        [(ngModel)]="hotel.rooms">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Stars:</mat-label>
+      <input required max="5" type="number" matInput matInput placeholder="Stars:" value="Stars:" id="hotelStars" name="stars"
+        [(ngModel)]="hotel.stars">
+    </mat-form-field>
+    <br>
+
+    <button mat-raised-button color="primary" (click)="addRooms()">Add Rooms</button>
+
+
+
+    <div *ngIf="rooms">
+      <div *ngIf="hotel.rooms >= 1">
+        <h3>Room 1</h3>
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 1 Number:</mat-label>
+          <input matInput placeholder="Room 1 Number:" value="Room 1 Number:" id="room1Number" name="roon1Number"
+            [(ngModel)]="hotel.room1Number">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 1 People:</mat-label>
+          <input matInput placeholder="Room 1 People:" value="Room 1 People:" id="room1People" name="room1People"
+            [(ngModel)]="hotel.room1People">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 1 Price:</mat-label>
+          <input matInput placeholder="Room 1 Price:" value="Room 1 Price:" id="room1Price" name="room1Price"
+            [(ngModel)]="hotel.room1Price">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 1 Description:</mat-label>
+          <input matInput placeholder="Room 1 Description:" value="Room 1 Description:" id="room1Description"
+            name="room1Description" [(ngModel)]="hotel.room1Description">
+        </mat-form-field>
+        <br>
+
+        <section class="example-section">
+          <mat-label>Available </mat-label>
+
+          <input type="checkbox" (change)="checkbox1($event)" />
+
+        </section>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 1 Dates:</mat-label>
+          <input matInput placeholder="Room 1 Dates:" value="Room 1 Dates:" id="room1Dates" name="room1Dates"
+            [(ngModel)]="hotel.room1Dates">
+        </mat-form-field>
+        <br>
+
+      </div>
+
+      <div *ngIf="hotel.rooms >= 2">
+
+        <h3>Room 2</h3>
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 2 Number:</mat-label>
+          <input matInput placeholder="Room 2 Number:" value="Room 2 Number:" id="room2Number" name="roon2Number"
+            [(ngModel)]="hotel.room2Number">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 2 People:</mat-label>
+          <input matInput placeholder="Room 2 People:" value="Room 2 People:" id="room2People" name="room2People"
+            [(ngModel)]="hotel.room2People">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 2 Price:</mat-label>
+          <input matInput placeholder="Room 2 Price:" value="Room 2 Price:" id="room2Price" name="room2Price"
+            [(ngModel)]="hotel.room2Price">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 2 Description:</mat-label>
+          <input matInput placeholder="Room 2 Description:" value="Room 2 Description:" id="room2Description"
+            name="room2Description" [(ngModel)]="hotel.room2Description">
+        </mat-form-field>
+        <br>
+
+        <section class="example-section">
+          <mat-label>Available </mat-label>
+
+          <input type="checkbox" (change)="checkbox2($event)" />
+
+        </section>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 2 Dates:</mat-label>
+          <input matInput placeholder="Room 2 Dates:" value="Room 2 Dates:" id="room2Dates" name="room2Dates"
+            [(ngModel)]="hotel.room2Dates">
+        </mat-form-field>
+        <br>
+
+      </div>
+
+      <div *ngIf="hotel.rooms >= 3">
+
+        <h3>Room 3</h3>
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 3 Number:</mat-label>
+          <input matInput placeholder="Room 3 Number:" value="Room 3 Number:" id="room2Number" name="roon3Number"
+            [(ngModel)]="hotel.room3Number">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 3 People:</mat-label>
+          <input matInput placeholder="Room 3 People:" value="Room 3 People:" id="room3People" name="room3People"
+            [(ngModel)]="hotel.room3People">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 3 Price:</mat-label>
+          <input matInput placeholder="Room 3 Price:" value="Room 3 Price:" id="room3Price" name="room3Price"
+            [(ngModel)]="hotel.room3Price">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 3 Description:</mat-label>
+          <input matInput placeholder="Room 3 Description:" value="Room 3 Description:" id="room3Description"
+            name="room3Description" [(ngModel)]="hotel.room3Description">
+        </mat-form-field>
+        <br>
+
+        <section class="example-section">
+          <mat-label>Available </mat-label>
+
+          <input type="checkbox" (change)="checkbox3($event)" />
+
+        </section>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 3 Dates:</mat-label>
+          <input matInput placeholder="Room 3 Dates:" value="Room 3 Dates:" id="room3Dates" name="room3Dates"
+            [(ngModel)]="hotel.room3Dates">
+        </mat-form-field>
+        <br>
+      </div>
+      <div *ngIf="hotel.rooms >= 4">
+
+        <h3>Room 4</h3>
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 4 Number:</mat-label>
+          <input matInput placeholder="Room 4 Number:" value="Room 4 Number:" id="room4Number" name="roon4Number"
+            [(ngModel)]="hotel.room4Number">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 4 People:</mat-label>
+          <input matInput placeholder="Room 4 People:" value="Room 4 People:" id="room4People" name="room4People"
+            [(ngModel)]="hotel.room4People">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 4 Price:</mat-label>
+          <input matInput placeholder="Room 4 Price:" value="Room 4 Price:" id="room4Price" name="room4Price"
+            [(ngModel)]="hotel.room4Price">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 4 Description:</mat-label>
+          <input matInput placeholder="Room 4 Description:" value="Room 4 Description:" id="room4Description"
+            name="room4Description" [(ngModel)]="hotel.room4Description">
+        </mat-form-field>
+        <br>
+
+        <section class="example-section">
+          <mat-label>Available </mat-label>
+
+          <input type="checkbox" (change)="checkbox4($event)" />
+
+        </section>
+        <br>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Room 4 Dates:</mat-label>
+          <input matInput placeholder="Room 4 Dates:" value="Room 4 Dates:" id="room4Dates" name="room4Dates"
+            [(ngModel)]="hotel.room4Dates">
+        </mat-form-field>
+        <br>
+      </div>
+    </div>
+
+
+
+    <button type="submit" mat-raised-button color="primary">Add hotel</button>
+    <button mat-raised-button color="primary" routerLink="/hotel-list">Hotel List</button>
+  </form>
+
+
+
+
+
+
+
+</div>

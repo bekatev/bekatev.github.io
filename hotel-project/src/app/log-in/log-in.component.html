@@ -1,0 +1,20 @@
+<div class="container my-5 myDiv">
+  <h1>Log In</h1>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Email:</mat-label>
+      <input matInput placeholder="Email:" name="email" [(ngModel)]="email">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Password:</mat-label>
+      <input matInput placeholder="Password:" name="password" [(ngModel)]="password">
+    </mat-form-field>
+    <br>
+    <button type="submit" mat-raised-button color="primary" (click)="login()">Log In</button>
+    <button routerLink="/sign-up" type="submit" mat-raised-button color="primary">Sign Up</button>
+    <br>
+    <br>
+    <p style="color:red" *ngIf="this.heroService.noSuchUser">No such user</p>
+  </form>
+</div>

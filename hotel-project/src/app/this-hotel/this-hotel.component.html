@@ -1,0 +1,372 @@
+<div class="container my-5">
+  <button mat-flat-button color="primary" data-toggle="modal" data-target="#exampleModal1">Add Room Info</button>
+
+  <h2>Name: {{ this.heroService.chosenHotel.name }}</h2>
+  <br>
+  <p>Location: {{ this.heroService.chosenHotel.location }}</p>
+  <br>
+  <img src="{{ this.heroService.chosenHotel.imgURL }}" alt="1" width="200px">
+  <img src="{{ this.heroService.chosenHotel.imgURL1 }}" alt="1" width="200px">
+  <img src="{{ this.heroService.chosenHotel.imgURL2 }}" alt="1" width="200px">
+
+  <table style="width:50%">
+    <tr>
+      <th>Rooms</th>
+    </tr>
+    <tr *ngIf="this.heroService.chosenHotel.rooms >= 1">
+      <td data-toggle="modal" data-target="#exampleModal2">
+        <p style="background-color: green;" *ngIf="this.heroService.chosenHotel.room1Availability">Room 1 Available</p>
+        <p style="background-color: red;" *ngIf="!this.heroService.chosenHotel.room1Availability">Room 1 Not Available</p>
+      </td>
+    </tr>
+    <tr *ngIf="this.heroService.chosenHotel.rooms >= 2">
+      <td data-toggle="modal" data-target="#exampleModal3">
+        <p style="background-color: green;" *ngIf="this.heroService.chosenHotel.room2Availability">Room 2 Available</p>
+        <p style="background-color: red;" *ngIf="!this.heroService.chosenHotel.room2Availability">Room 2 Not Available</p>
+      </td>
+    </tr>
+    <tr *ngIf="this.heroService.chosenHotel.rooms >= 3">
+      <td data-toggle="modal" data-target="#exampleModal4">
+        <p style="background-color: green;" *ngIf="this.heroService.chosenHotel.room3Availability">Room 3 Available</p>
+        <p style="background-color: red;" *ngIf="!this.heroService.chosenHotel.room3Availability">Room 3 Not Available</p>
+      </td>
+    </tr>
+    <tr *ngIf="this.heroService.chosenHotel.rooms >= 4">
+      <td data-toggle="modal" data-target="#exampleModal5">
+        <p style="background-color: green;" *ngIf="this.heroService.chosenHotel.room4Availability">Room 4 Available</p>
+        <p style="background-color: red;" *ngIf="!this.heroService.chosenHotel.room4Availability">Room 4 Not Available</p>
+      </td>
+    </tr>
+  </table>
+
+
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Room</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div *ngIf="this.heroService.chosenHotel.rooms >= 1">
+            <h3>Room 1</h3>
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 1 Number:</mat-label>
+              <input matInput placeholder="Room 1 Number:" value="Room 1 Number:" id="room1Number" name="roon1Number"
+                [(ngModel)]="this.heroService.chosenHotel.room1Number">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 1 People:</mat-label>
+              <input matInput placeholder="Room 1 People:" value="Room 1 People:" id="room1People" name="room1People"
+                [(ngModel)]="this.heroService.chosenHotel.room1People">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 1 Price:</mat-label>
+              <input matInput placeholder="Room 1 Price:" value="Room 1 Price:" id="room1Price" name="room1Price"
+                [(ngModel)]="this.heroService.chosenHotel.room1Price">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 1 Description:</mat-label>
+              <input matInput placeholder="Room 1 Description:" value="Room 1 Description:" id="room1Description"
+                name="room1Description" [(ngModel)]="this.heroService.chosenHotel.room1Description">
+            </mat-form-field>
+            <br>
+
+            <section class="example-section">
+              <mat-label>Available </mat-label>
+
+              <input type="checkbox" (change)="checkbox1($event)" />
+
+            </section>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 1 Dates:</mat-label>
+              <input matInput placeholder="Room 1 Dates:" value="Room 1 Dates:" id="room1Dates" name="room1Dates"
+                [(ngModel)]="this.heroService.chosenHotel.room1Dates">
+            </mat-form-field>
+            <br>
+
+          </div>
+          <div *ngIf="this.heroService.chosenHotel.rooms >= 2">
+
+            <h3>Room 2</h3>
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 2 Number:</mat-label>
+              <input matInput placeholder="Room 2 Number:" value="Room 2 Number:" id="room2Number" name="roon2Number"
+                [(ngModel)]="this.heroService.chosenHotelroom2Number">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 2 People:</mat-label>
+              <input matInput placeholder="Room 2 People:" value="Room 2 People:" id="room2People" name="room2People"
+                [(ngModel)]="this.heroService.chosenHotel.room2People">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 2 Price:</mat-label>
+              <input matInput placeholder="Room 2 Price:" value="Room 2 Price:" id="room2Price" name="room2Price"
+                [(ngModel)]="this.heroService.chosenHotel.room2Price">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 2 Description:</mat-label>
+              <input matInput placeholder="Room 2 Description:" value="Room 2 Description:" id="room2Description"
+                name="room2Description" [(ngModel)]="this.heroService.chosenHotel.room2Description">
+            </mat-form-field>
+            <br>
+
+            <section class="example-section">
+              <mat-label>Available </mat-label>
+
+              <input type="checkbox" (change)="checkbox2($event)" />
+
+            </section>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 2 Dates:</mat-label>
+              <input matInput placeholder="Room 2 Dates:" value="Room 2 Dates:" id="room2Dates" name="room2Dates"
+                [(ngModel)]="this.heroService.chosenHotel.room2Dates">
+            </mat-form-field>
+            <br>
+
+          </div>
+          <div *ngIf="this.heroService.chosenHotel.rooms >= 3">
+
+            <h3>Room 3</h3>
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 3 Number:</mat-label>
+              <input matInput placeholder="Room 3 Number:" value="Room 3 Number:" id="room2Number" name="roon3Number"
+                [(ngModel)]="this.heroService.chosenHotel.room3Number">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 3 People:</mat-label>
+              <input matInput placeholder="Room 3 People:" value="Room 3 People:" id="room3People" name="room3People"
+                [(ngModel)]="this.heroService.chosenHotel.room3People">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 3 Price:</mat-label>
+              <input matInput placeholder="Room 3 Price:" value="Room 3 Price:" id="room3Price" name="room3Price"
+                [(ngModel)]="this.heroService.chosenHotel.room3Price">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 3 Description:</mat-label>
+              <input matInput placeholder="Room 3 Description:" value="Room 3 Description:" id="room3Description"
+                name="room3Description" [(ngModel)]="this.heroService.chosenHotel.room3Description">
+            </mat-form-field>
+            <br>
+
+            <section class="example-section">
+              <mat-label>Available </mat-label>
+
+              <input type="checkbox" (change)="checkbox3($event)" />
+
+            </section>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 3 Dates:</mat-label>
+              <input matInput placeholder="Room 3 Dates:" value="Room 3 Dates:" id="room3Dates" name="room3Dates"
+                [(ngModel)]="this.heroService.chosenHotel.room3Dates">
+            </mat-form-field>
+            <br>
+          </div>
+          <div *ngIf="this.heroService.chosenHotel.rooms >= 4">
+
+            <h3>Room 4</h3>
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 4 Number:</mat-label>
+              <input matInput placeholder="Room 4 Number:" value="Room 4 Number:" id="room4Number" name="roon4Number"
+                [(ngModel)]="this.heroService.chosenHotel.room4Number">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 4 People:</mat-label>
+              <input matInput placeholder="Room 4 People:" value="Room 4 People:" id="room4People" name="room4People"
+                [(ngModel)]="this.heroService.chosenHotel.room4People">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 4 Price:</mat-label>
+              <input matInput placeholder="Room 4 Price:" value="Room 4 Price:" id="room4Price" name="room4Price"
+                [(ngModel)]="this.heroService.chosenHotel.room4Price">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 4 Description:</mat-label>
+              <input matInput placeholder="Room 4 Description:" value="Room 4 Description:" id="room4Description"
+                name="room4Description" [(ngModel)]="this.heroService.chosenHotelroom4Description">
+            </mat-form-field>
+            <br>
+
+            <section class="example-section">
+              <mat-label>Available </mat-label>
+
+              <input type="checkbox" (change)="checkbox4($event)" />
+
+            </section>
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Room 4 Dates:</mat-label>
+              <input matInput placeholder="Room 4 Dates:" value="Room 4 Dates:" id="room4Dates" name="room4Dates"
+                [(ngModel)]="this.heroService.chosenHotel.room4Dates">
+            </mat-form-field>
+            <br>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Room 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Number: {{ this.heroService.chosenHotel.room1Number }}</p>
+          <br>
+          <p>People: {{ this.heroService.chosenHotel.room1People }}</p>
+          <br>
+          <p>Description: {{ this.heroService.chosenHotel.room1Description }}</p>
+          <br>
+          <p>Price: {{ this.heroService.chosenHotel.room1Price }} $</p>
+          <br>
+          <p *ngIf="this.heroService.chosenHotel.room1Availability">Available</p>
+          <p *ngIf="!this.heroService.chosenHotel.room1Availability">Not Available</p>
+          <br>
+          <p>Dates: {{ this.heroService.chosenHotel.room1Dates }}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Room 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Number: {{ this.heroService.chosenHotel.room2Number }}</p>
+        <br>
+        <p>People: {{ this.heroService.chosenHotel.room2People }}</p>
+        <br>
+        <p>Description: {{ this.heroService.chosenHotel.room2Description }}</p>
+        <br>
+        <p>Price: {{ this.heroService.chosenHotel.room2Price }} $</p>
+        <br>
+        <p *ngIf="this.heroService.chosenHotel.room2Availability">Available</p>
+        <p *ngIf="!this.heroService.chosenHotel.room2Availability">Not Available</p>
+        <br>
+        <p>Dates: {{ this.heroService.chosenHotel.room2Dates }}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Room 3</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>Number: {{ this.heroService.chosenHotel.room3Number }}</p>
+      <br>
+      <p>People: {{ this.heroService.chosenHotel.room3People }}</p>
+      <br>
+      <p>Description: {{ this.heroService.chosenHotel.room3Description }}</p>
+      <br>
+      <p>Price: {{ this.heroService.chosenHotel.room3Price }} $</p>
+      <br>
+      <p *ngIf="this.heroService.chosenHotel.room3Availability">Available</p>
+      <p *ngIf="!this.heroService.chosenHotel.room3Availability">Not Available</p>
+      <br>
+      <p>Dates: {{ this.heroService.chosenHotel.room3Dates }}</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Room 4</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>Number: {{ this.heroService.chosenHotel.room4Number }}</p>
+      <br>
+      <p>People: {{ this.heroService.chosenHotel.room4People }}</p>
+      <br>
+      <p>Description: {{ this.heroService.chosenHotel.room4Description }}</p>
+      <br>
+      <p>Price: {{ this.heroService.chosenHotel.room4Price }} $</p>
+      <br>
+      <p *ngIf="this.heroService.chosenHotel.room4Availability">Available</p>
+      <p *ngIf="!this.heroService.chosenHotel.room4Availability">Not Available</p>
+      <br>
+      <p>Dates: {{ this.heroService.chosenHotel.room4Dates }}</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>

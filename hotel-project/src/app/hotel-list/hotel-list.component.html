@@ -1,0 +1,178 @@
+<div class="container my-5">
+  <h1>hotels</h1>
+  <mat-grid-list cols="2" rowHeight="2:2">
+    <mat-grid-tile *ngFor="let hotel of hotels">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{ hotel.name }}</mat-card-title>
+          <mat-card-subtitle>{{hotel.location}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-md-image src="{{ hotel.imgURL }}">
+        <mat-card-content>
+          <br>
+          <mat-card-title>Price: ${{ hotel.price }}</mat-card-title>
+          <p>Location: {{ hotel.location }}</p>
+
+          <p>Rooms: {{ hotel.rooms }}</p>
+
+          <mat-icon *ngIf="hotel.stars >= 1 " class="yellow-icon">star</mat-icon>
+          <mat-icon *ngIf="hotel.stars >= 2 " class="yellow-icon">star</mat-icon>
+          <mat-icon *ngIf="hotel.stars >= 3 " class="yellow-icon">star</mat-icon>
+          <mat-icon *ngIf="hotel.stars >= 4 " class="yellow-icon">star</mat-icon>
+          <mat-icon *ngIf="hotel.stars >= 5 " class="yellow-icon">star</mat-icon>
+
+          <mat-icon *ngIf="5 - hotel.stars >= 1 ">star_border</mat-icon>
+          <mat-icon *ngIf="5 - hotel.stars >= 2 ">star_border</mat-icon>
+          <mat-icon *ngIf="5 - hotel.stars >= 3 ">star_border</mat-icon>
+          <mat-icon *ngIf="5 - hotel.stars >= 4 ">star_border</mat-icon>
+          <mat-icon *ngIf="5 - hotel.stars >= 5 ">star_border</mat-icon>
+
+
+
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-flat-button color="primary" (click)="selectHotel(hotel)" data-toggle="modal"
+            data-target="#exampleModal">This hotel</button>
+
+          <button mat-flat-button color="primary" routerLink="/this-hotel" (click)="heroService.chooseHotel(hotel)">More
+            Info</button>
+        </mat-card-actions>
+      </mat-card>
+
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+
+
+  <button mat-flat-button color="primary" data-toggle="modal" data-target="#exampleModal1">Add Hotel from this
+    page</button>
+
+  <div>
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Hotel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="example-form" #hotelForm="ngForm" (ngSubmit)="onSubmit()">
+              <mat-form-field class="example-full-width">
+                <mat-label>hotel Name:</mat-label>
+                <input matInput required placeholder="Name:" value="Name:" id="hotelName" name="name"
+                  [(ngModel)]="hotel1.name">
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-full-width">
+                <mat-label>hotel Location:</mat-label>
+                <input matInput required placeholder="Location:" value="Location:" id="hotelLocation" name="location"
+                  [(ngModel)]="hotel1.location">
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-full-width">
+                <mat-label>Price:</mat-label>
+                <input matInput required type="number" matInput placeholder="Price:" value="Price:" id="hotelPrice"
+                  name="price" [(ngModel)]="hotel1.price">
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-full-width">
+                <mat-label>Main Image URL:</mat-label>
+                <input matInput required type="text" matInput placeholder="URL:" value="URL:" id="imgURL" name="imgURL"
+                  [(ngModel)]="hotel1.imgURL">
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-full-width">
+                <mat-label>Second URL:</mat-label>
+                <input matInput type="text" required matInput placeholder="URL:" value="URL:" id="imgURL1"
+                  name="imgURL1" [(ngModel)]="hotel1.imgURL1">
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-full-width">
+                <mat-label>Third URL:</mat-label>
+                <input matInput type="text" required matInput placeholder="URL:" value="URL:" id="imgURL2"
+                  name="imgURL2" [(ngModel)]="hotel1.imgURL2">
+              </mat-form-field>
+              <br>
+              <br>
+              <mat-form-field class="example-full-width">
+                <mat-label>Description:</mat-label>
+                <textarea matInput matInput required placeholder="Description:" value="Description:"
+                  id="hotelDescription" name="description" [(ngModel)]="hotel1.description"></textarea>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-full-width">
+                <mat-label>Rooms:</mat-label>
+                <input required type="number" matInput matInput placeholder="Rooms:" value="Rooms:" id="hotelRooms"
+                  name="rooms" [(ngModel)]="hotel1.rooms">
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-full-width">
+                <mat-label>Stars:</mat-label>
+                <input required max="5" type="number" matInput matInput placeholder="Stars:" value="Stars:"
+                  id="hotelStars" name="stars" [(ngModel)]="hotel1.stars">
+              </mat-form-field>
+              <br>
+              <button type="submit" onclick="$('.modal').modal('hide')" (click)="load()" mat-raised-button
+                color="primary">Add
+                hotel</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div *ngIf="selectedHotel">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">{{selectedHotel.name}}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Location: {{selectedHotel.location}}</p>
+            <br>
+            <img mat-card-md-image src="{{ selectedHotel.imgURL }}">
+            <br>
+            <br>
+            <mat-icon *ngIf="selectedHotel.stars >= 1 " class="yellow-icon">star</mat-icon>
+            <mat-icon *ngIf="selectedHotel.stars >= 2 " class="yellow-icon">star</mat-icon>
+            <mat-icon *ngIf="selectedHotel.stars >= 3 " class="yellow-icon">star</mat-icon>
+            <mat-icon *ngIf="selectedHotel.stars >= 4 " class="yellow-icon">star</mat-icon>
+            <mat-icon *ngIf="selectedHotel.stars >= 5 " class="yellow-icon">star</mat-icon>
+
+            <mat-icon *ngIf="5 - selectedHotel.stars >= 1 ">star_border</mat-icon>
+            <mat-icon *ngIf="5 - selectedHotel.stars >= 2 ">star_border</mat-icon>
+            <mat-icon *ngIf="5 - selectedHotel.stars >= 3 ">star_border</mat-icon>
+            <mat-icon *ngIf="5 - selectedHotel.stars >= 4 ">star_border</mat-icon>
+            <mat-icon *ngIf="5 - selectedHotel.stars >= 5 ">star_border</mat-icon>
+            <br>
+            <p>Description: {{selectedHotel.description}}</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <br>
+  <button mat-flat-button color="primary" (click)="this.heroService.cleanAll(); load()">Clear All</button>
+
+</div>
