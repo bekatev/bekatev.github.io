@@ -60,6 +60,12 @@ AppModule
 AppRoutingModule
 
 ## Screenshots
-
+https://github.com/bekatev/bekatev.github.io/blob/master/hotel-project/src/assets/signUp.PNG
+https://github.com/bekatev/bekatev.github.io/blob/master/hotel-project/src/assets/logIn.PNG
+https://github.com/bekatev/bekatev.github.io/blob/master/hotel-project/src/assets/HotelListPage.PNG
+https://github.com/bekatev/bekatev.github.io/blob/master/hotel-project/src/assets/HotelModal.PNG
+https://github.com/bekatev/bekatev.github.io/blob/master/hotel-project/src/assets/moreInfo.PNG
+https://github.com/bekatev/bekatev.github.io/blob/master/hotel-project/src/assets/RoomsTable.PNG
+https://github.com/bekatev/bekatev.github.io/blob/master/hotel-project/src/assets/RoomsInfoModal.PNG
 
 
