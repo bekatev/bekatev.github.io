@@ -23,41 +23,41 @@ and present them to the public and thus enhance domestic tourism.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Dependencies
-@angular/animations : ~11.2.8
-@angular/cdk : ^11.2.7
-@angular/common : ~11.2.8
-@angular/compiler : ~11.2.8
-@angular/core : ~11.2.8
-@angular/fire : ^6.1.4
-@angular/forms : ~11.2.8
-@angular/material : ^11.2.7
-@angular/platform-browser : ~11.2.8
-@angular/platform-browser-dynamic : ~11.2.8
-@angular/router : ~11.2.8
-@ngx-pwa/local-storage : ^5.3.6
-firebase : ^7.0 || ^8.0
-jquery : ^3.6.0
-material-ui-rating : ^4.0.0-beta.2
-rxjs : ~6.6.0
-tslib : ^2.0.0
-zone.js : ~0.11.3
+* @angular/animations : ~11.2.8
+* @angular/cdk : ^11.2.7
+* @angular/common : ~11.2.8
+* @angular/compiler : ~11.2.8
+* @angular/core : ~11.2.8
+* @angular/fire : ^6.1.4
+* @angular/forms : ~11.2.8
+* @angular/material : ^11.2.7
+* @angular/platform-browser : ~11.2.8
+* @angular/platform-browser-dynamic : ~11.2.8
+* @angular/router : ~11.2.8
+* @ngx-pwa/local-storage : ^5.3.6
+* firebase : ^7.0 || ^8.0
+* jquery : ^3.6.0
+* material-ui-rating : ^4.0.0-beta.2
+* rxjs : ~6.6.0
+* tslib : ^2.0.0
+* zone.js : ~0.11.3
 
 ## Components
 
 Run `ng generate component component-name`
-AddHotelComponent
-AppComponent
-FooterComponent
-HeaderComponent
-HotelListComponent
-LogInComponent
-SignUpComponent
-ThisHotelComponent
+* AddHotelComponent
+* AppComponent
+* FooterComponent
+* HeaderComponent
+* HotelListComponent
+* LogInComponent
+* SignUpComponent
+* ThisHotelComponent
 
 ## Modules
 
-AppModule
-AppRoutingModule
+* AppModule
+* AppRoutingModule
 
 ## Screenshots
 https://github.com/bekatev/bekatev.github.io/blob/master/hotel-project/src/assets/signUp.PNG
