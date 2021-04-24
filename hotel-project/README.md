@@ -14,9 +14,9 @@ and present them to the public and thus enhance domestic tourism.
 
 # Technologies 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
-npm version - 6.14.11
-node version - 14.16.0
+* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
+* npm version - 6.14.11
+* node version - 14.16.0
 
 ## Development server
 
