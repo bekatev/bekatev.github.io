@@ -10,7 +10,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 })
 export class SignUpComponent implements OnInit {
   email!: string;
-  password!: string;
+  password!: any;
 
   constructor(public auth: AngularFireAuth) { }
 

@@ -1,29 +1,29 @@
 <div class="container my-5 myDiv">
-  <h1>Sign Up</h1>
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <mat-label>First Name:</mat-label>
-      <input matInput placeholder="First Name:">
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <mat-label>Second Name:</mat-label>
-      <input matInput placeholder="Second Name:">
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <mat-label>Email:</mat-label>
-      <input matInput placeholder="Email:" name="email" [(ngModel)]="email">
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <mat-label>Password:</mat-label>
-      <input matInput placeholder="Password:" name="password" [(ngModel)]="password">
-    </mat-form-field>
-    <br>
-    <br>
+    <h1>Sign Up</h1>
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>First Name:</mat-label>
+            <input matInput placeholder="First Name:">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Second Name:</mat-label>
+            <input matInput placeholder="Second Name:">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Email:</mat-label>
+            <input matInput placeholder="Email:" name="email" [(ngModel)]="email">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Password:</mat-label>
+            <input matInput placeholder="Password:" name="password" [(ngModel)]="password">
+        </mat-form-field>
+        <br>
+        <br>
 
-    <button routerLink="/log-in" (click)="signUp()" type="submit" mat-raised-button color="primary">Sign Up</button>
-    <button routerLink="/log-in" type="submit" mat-raised-button color="primary">Log In</button>
-  </form>
+        <button routerLink="/log-in" (click)="signUp()" type="submit" class="btn">Sign Up</button>
+        <button routerLink="/log-in" type="submit" class="btn">Log In</button>
+    </form>
 </div>

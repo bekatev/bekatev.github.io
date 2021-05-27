@@ -1,0 +1,1126 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>hotel-project documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">hotel-project documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>HotelListComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/hotel-list/hotel-list.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-hotel-list</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./hotel-list.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./hotel-list.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#heroService">heroService</a>
+                            </li>
+                            <li>
+                                <a href="#hotel">hotel</a>
+                            </li>
+                            <li>
+                                <a href="#hotel1">hotel1</a>
+                            </li>
+                            <li>
+                                <a href="#hotels">hotels</a>
+                            </li>
+                            <li>
+                                <a href="#selectedHotel">selectedHotel</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#load">load</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectHotel">selectHotel</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(heroService: <a href="../injectables/HeroService.html">HeroService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/hotel-list/hotel-list.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>heroService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/HeroService.html" target="_self" >HeroService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="load"></a>
+                    <span class="name">
+                        <b>
+                            load
+                        </b>
+                        <a href="#load"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>load()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/app/hotel-list/hotel-list.component.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/hotel-list/hotel-list.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <b>
+                            onSubmit
+                        </b>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/hotel-list/hotel-list.component.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectHotel"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            selectHotel
+                        </b>
+                        <a href="#selectHotel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>selectHotel(hotel: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/app/hotel-list/hotel-list.component.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>hotel</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="heroService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            heroService</b>
+                            <a href="#heroService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/HeroService.html" target="_self" >HeroService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/hotel-list/hotel-list.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hotel"></a>
+                        <span class="name">
+                            <b>
+                            hotel</b>
+                            <a href="#hotel"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/hotel-list/hotel-list.component.ts:11</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hotel1"></a>
+                        <span class="name">
+                            <b>
+                            hotel1</b>
+                            <a href="#hotel1"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    name: &#x27;&#x27;,
+    location: &#x27;&#x27;,
+    price: null,
+    imgURL: &#x27;&#x27;,
+    imgURL1: &#x27;&#x27;,
+    imgURL2: &#x27;&#x27;,
+    description: &#x27;&#x27;,
+    rooms: &#x27;&#x27;,
+    stars: &#x27;&#x27;,
+    room1Number: &#x27;&#x27;,
+    room1People: &#x27;&#x27;,
+    room1Description: &#x27;&#x27;,
+    room1Price: &#x27;&#x27;,
+    room1Availability: &#x27;&#x27;,
+    room1Dates: &#x27;&#x27;,
+    room2Number: &#x27;&#x27;,
+    room2People: &#x27;&#x27;,
+    room2Description: &#x27;&#x27;,
+    room2Price: &#x27;&#x27;,
+    room2Availability: &#x27;&#x27;,
+    room2Dates: &#x27;&#x27;,
+    room3Number: &#x27;&#x27;,
+    room3People: &#x27;&#x27;,
+    room3Description: &#x27;&#x27;,
+    room3Price: &#x27;&#x27;,
+    room3Availability: &#x27;&#x27;,
+    room3Dates: &#x27;&#x27;,
+    room4Number: &#x27;&#x27;,
+    room4People: &#x27;&#x27;,
+    room4Description: &#x27;&#x27;,
+    room4Price: &#x27;&#x27;,
+    room4Availability: &#x27;&#x27;,
+    room4Dates: &#x27;&#x27;,
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/hotel-list/hotel-list.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hotels"></a>
+                        <span class="name">
+                            <b>
+                            hotels</b>
+                            <a href="#hotels"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/hotel-list/hotel-list.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedHotel"></a>
+                        <span class="name">
+                            <b>
+                            selectedHotel</b>
+                            <a href="#selectedHotel"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/hotel-list/hotel-list.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { HeroService } from &#x27;../hero.service&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+
+@Component({
+  selector: &#x27;app-hotel-list&#x27;,
+  templateUrl: &#x27;./hotel-list.component.html&#x27;,
+  styleUrls: [&#x27;./hotel-list.component.css&#x27;]
+})
+export class HotelListComponent implements OnInit {
+  hotel!: any;
+  hotels!: any;
+  selectedHotel!: any;
+
+  hotel1: {name: any, location: any, price: any, imgURL: any, imgURL1: any, imgURL2: any, description: any, rooms:any, stars:any, room1Number: any, room1People: any, room1Description: any, room1Price: any, room1Availability: any, room1Dates: any, room2Number: any, room2People: any, room2Description: any, room2Price: any, room2Availability: any, room2Dates: any, room3Number: any, room3People: any, room3Description: any, room3Price: any, room3Availability: any,  room3Dates: any, room4Number: any, room4People: any, room4Description: any, room4Price: any, room4Availability: any, room4Dates: any} &#x3D; {
+    name: &#x27;&#x27;,
+    location: &#x27;&#x27;,
+    price: null,
+    imgURL: &#x27;&#x27;,
+    imgURL1: &#x27;&#x27;,
+    imgURL2: &#x27;&#x27;,
+    description: &#x27;&#x27;,
+    rooms: &#x27;&#x27;,
+    stars: &#x27;&#x27;,
+    room1Number: &#x27;&#x27;,
+    room1People: &#x27;&#x27;,
+    room1Description: &#x27;&#x27;,
+    room1Price: &#x27;&#x27;,
+    room1Availability: &#x27;&#x27;,
+    room1Dates: &#x27;&#x27;,
+    room2Number: &#x27;&#x27;,
+    room2People: &#x27;&#x27;,
+    room2Description: &#x27;&#x27;,
+    room2Price: &#x27;&#x27;,
+    room2Availability: &#x27;&#x27;,
+    room2Dates: &#x27;&#x27;,
+    room3Number: &#x27;&#x27;,
+    room3People: &#x27;&#x27;,
+    room3Description: &#x27;&#x27;,
+    room3Price: &#x27;&#x27;,
+    room3Availability: &#x27;&#x27;,
+    room3Dates: &#x27;&#x27;,
+    room4Number: &#x27;&#x27;,
+    room4People: &#x27;&#x27;,
+    room4Description: &#x27;&#x27;,
+    room4Price: &#x27;&#x27;,
+    room4Availability: &#x27;&#x27;,
+    room4Dates: &#x27;&#x27;,
+  };
+  constructor(public heroService: HeroService,private router: Router) {
+    this.hotels &#x3D; JSON.parse(localStorage.getItem(&#x27;hotels&#x27;) || &#x27;{}&#x27;);
+
+  }
+
+  ngOnInit(): void {
+  }
+
+  public selectHotel(hotel: any){
+    this.selectedHotel &#x3D; hotel;
+  }
+
+  load(): void{
+    window.location.reload();
+}
+
+  onSubmit(){
+    this.heroService.createHotels(this.hotel1);
+    this.hotel1 &#x3D; {
+      name: &#x27;&#x27;,
+      location: &#x27;&#x27;,
+      price: null,
+      imgURL: &#x27;&#x27;,
+      imgURL1: &#x27;&#x27;,
+      imgURL2: &#x27;&#x27;,
+      description: &#x27;&#x27;,
+      rooms: &#x27;&#x27;,
+      stars: &#x27;&#x27;,
+      room1Number: &#x27;&#x27;,
+      room1People: &#x27;&#x27;,
+      room1Description: &#x27;&#x27;,
+      room1Price: &#x27;&#x27;,
+      room1Availability: &#x27;&#x27;,
+      room1Dates: &#x27;&#x27;,
+      room2Number: &#x27;&#x27;,
+      room2People: &#x27;&#x27;,
+      room2Description: &#x27;&#x27;,
+      room2Price: &#x27;&#x27;,
+      room2Availability: &#x27;&#x27;,
+      room2Dates: &#x27;&#x27;,
+      room3Number: &#x27;&#x27;,
+      room3People: &#x27;&#x27;,
+      room3Description: &#x27;&#x27;,
+      room3Price: &#x27;&#x27;,
+      room3Availability: &#x27;&#x27;,
+      room3Dates: &#x27;&#x27;,
+      room4Number: &#x27;&#x27;,
+      room4People: &#x27;&#x27;,
+      room4Description: &#x27;&#x27;,
+      room4Price: &#x27;&#x27;,
+      room4Availability: &#x27;&#x27;,
+      room4Dates: &#x27;&#x27;,
+    };
+
+}
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container-fluid&quot; style&#x3D;&quot;border-radius: 10px; background-color: rgb(226, 240, 226);&quot;&gt;
+  &lt;!--&lt;div class&#x3D;&quot;cardsContainer&quot;&gt;
+    &lt;mat-grid-list cols&#x3D;&quot;3&quot; rowHeight&#x3D;&quot;1:2&quot;&gt;
+      &lt;mat-grid-tile *ngFor&#x3D;&quot;let hotel of hotels&quot; (click)&#x3D;&quot;selectHotel(hotel)&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#exampleModal&quot;&gt;
+        &lt;div class&#x3D;&quot;card col&quot; id&#x3D;&quot;myCard&quot;&gt;
+          &lt;br&gt;
+          &lt;h2 class&#x3D;&quot;card-text&quot;&gt;{{ hotel.name }}&lt;/h2&gt;
+         &lt;br&gt;
+         &lt;img mat-card-md-image src&#x3D;&quot;{{ hotel.imgURL }}&quot; height&#x3D;&quot;300px&quot;&gt;
+         &lt;br&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;h3 class&#x3D;&quot;card-text&quot;&gt;Location: {{ hotel.location }}&lt;/h3&gt;
+            
+            &lt;h4 class&#x3D;&quot;card-text&quot;&gt;Price: $ {{ hotel.price}} &lt;/h4&gt;
+            
+            &lt;h4 class&#x3D;&quot;card-text&quot;&gt;Rooms: {{ hotel.rooms }}&lt;/h4&gt;
+            
+            &lt;mat-icon *ngIf&#x3D;&quot;hotel.stars &gt;&#x3D; 1&quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;hotel.stars &gt;&#x3D; 2&quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;hotel.stars &gt;&#x3D; 3&quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;hotel.stars &gt;&#x3D; 4&quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;hotel.stars &gt;&#x3D; 5&quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - hotel.stars &gt;&#x3D; 1&quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - hotel.stars &gt;&#x3D; 2&quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - hotel.stars &gt;&#x3D; 3&quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - hotel.stars &gt;&#x3D; 4&quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - hotel.stars &gt;&#x3D; 5&quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-card-actions&gt;
+              &lt;br&gt;
+              &lt;br&gt;
+              &lt;button mat-flat-button class&#x3D;&quot;btn&quot; routerLink&#x3D;&quot;/this-hotel&quot; (click)&#x3D;&quot;heroService.chooseHotel(hotel)&quot; &gt;More Info&lt;/button&gt;
+              &lt;br&gt;
+            &lt;/mat-card-actions&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/mat-grid-tile&gt;
+    &lt;/mat-grid-list&gt;
+  &lt;/div&gt;--&gt;
+  &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+    &lt;button mat-flat-button class&#x3D;&quot;btn&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#exampleModal1&quot;&gt;Add Hotel from this
+      page&lt;/button&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-lg-4 col-md-6 col-xs-1&quot; *ngFor&#x3D;&quot;let hotel of hotels&quot; (click)&#x3D;&quot;selectHotel(hotel)&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#exampleModal&quot;&gt;
+        &lt;div class&#x3D;&quot;card&quot; style&#x3D;&quot;width: 18rem;&quot;&gt;
+          &lt;h2 class&#x3D;&quot;card-title&quot;&gt;{{ hotel.name }}&lt;/h2&gt;
+          &lt;img class&#x3D;&quot;card-img-top&quot; src&#x3D;&quot;{{ hotel.imgURL }}&quot; height&#x3D;&quot;250px&quot; alt&#x3D;&quot;Card image cap&quot;&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;h3 class&#x3D;&quot;card-text&quot;&gt;Location: {{ hotel.location }}&lt;/h3&gt;
+            
+            &lt;h4 class&#x3D;&quot;card-text&quot;&gt;Price: $ {{ hotel.price}} &lt;/h4&gt;
+            
+            &lt;h4 class&#x3D;&quot;card-text&quot;&gt;Rooms: {{ hotel.rooms }}&lt;/h4&gt;
+            
+            &lt;mat-icon *ngIf&#x3D;&quot;hotel.stars &gt;&#x3D; 1&quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;hotel.stars &gt;&#x3D; 2&quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;hotel.stars &gt;&#x3D; 3&quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;hotel.stars &gt;&#x3D; 4&quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;hotel.stars &gt;&#x3D; 5&quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - hotel.stars &gt;&#x3D; 1&quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - hotel.stars &gt;&#x3D; 2&quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - hotel.stars &gt;&#x3D; 3&quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - hotel.stars &gt;&#x3D; 4&quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - hotel.stars &gt;&#x3D; 5&quot;&gt;star_border&lt;/mat-icon&gt;
+          
+              &lt;br&gt;
+              &lt;button mat-flat-button class&#x3D;&quot;btn&quot; routerLink&#x3D;&quot;/this-hotel&quot; (click)&#x3D;&quot;heroService.chooseHotel(hotel)&quot; &gt;More Info&lt;/button&gt;
+              &lt;br&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+
+&lt;div class&#x3D;&quot;container-fluid cardsContainer&quot;&gt;
+  &lt;button mat-flat-button color&#x3D;&quot;warn&quot; class&#x3D;&quot;btn&quot; (click)&#x3D;&quot;this.heroService.cleanAll(); load()&quot;&gt;Clear All&lt;/button&gt;
+  &lt;div&gt;
+    &lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;exampleModal1&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;exampleModalLabel&quot;
+      aria-hidden&#x3D;&quot;true&quot;&gt;
+      &lt;div class&#x3D;&quot;modal-dialog&quot; role&#x3D;&quot;document&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+          &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+            &lt;h5 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;exampleModalLabel&quot;&gt;Add Hotel&lt;/h5&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+              &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+            &lt;form class&#x3D;&quot;example-form&quot; #hotelForm&#x3D;&quot;ngForm&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot;&gt;
+              &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                &lt;mat-label&gt;hotel Name:&lt;/mat-label&gt;
+                &lt;input matInput required placeholder&#x3D;&quot;Name:&quot; value&#x3D;&quot;Name:&quot; id&#x3D;&quot;hotelName&quot; name&#x3D;&quot;name&quot;
+                  [(ngModel)]&#x3D;&quot;hotel1.name&quot;&gt;
+              &lt;/mat-form-field&gt;
+              &lt;br&gt;
+              &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                &lt;mat-label&gt;hotel Location:&lt;/mat-label&gt;
+                &lt;input matInput required placeholder&#x3D;&quot;Location:&quot; value&#x3D;&quot;Location:&quot; id&#x3D;&quot;hotelLocation&quot; name&#x3D;&quot;location&quot;
+                  [(ngModel)]&#x3D;&quot;hotel1.location&quot;&gt;
+              &lt;/mat-form-field&gt;
+              &lt;br&gt;
+              &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                &lt;mat-label&gt;Price:&lt;/mat-label&gt;
+                &lt;input matInput required type&#x3D;&quot;number&quot; matInput placeholder&#x3D;&quot;Price:&quot; value&#x3D;&quot;Price:&quot; id&#x3D;&quot;hotelPrice&quot;
+                  name&#x3D;&quot;price&quot; [(ngModel)]&#x3D;&quot;hotel1.price&quot;&gt;
+              &lt;/mat-form-field&gt;
+              &lt;br&gt;
+              &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                &lt;mat-label&gt;Main Image URL:&lt;/mat-label&gt;
+                &lt;input matInput required type&#x3D;&quot;text&quot; matInput placeholder&#x3D;&quot;URL:&quot; value&#x3D;&quot;URL:&quot; id&#x3D;&quot;imgURL&quot; name&#x3D;&quot;imgURL&quot;
+                  [(ngModel)]&#x3D;&quot;hotel1.imgURL&quot;&gt;
+              &lt;/mat-form-field&gt;
+              &lt;br&gt;
+              &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                &lt;mat-label&gt;Second URL:&lt;/mat-label&gt;
+                &lt;input matInput type&#x3D;&quot;text&quot; required matInput placeholder&#x3D;&quot;URL:&quot; value&#x3D;&quot;URL:&quot; id&#x3D;&quot;imgURL1&quot;
+                  name&#x3D;&quot;imgURL1&quot; [(ngModel)]&#x3D;&quot;hotel1.imgURL1&quot;&gt;
+              &lt;/mat-form-field&gt;
+              &lt;br&gt;
+              &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                &lt;mat-label&gt;Third URL:&lt;/mat-label&gt;
+                &lt;input matInput type&#x3D;&quot;text&quot; required matInput placeholder&#x3D;&quot;URL:&quot; value&#x3D;&quot;URL:&quot; id&#x3D;&quot;imgURL2&quot;
+                  name&#x3D;&quot;imgURL2&quot; [(ngModel)]&#x3D;&quot;hotel1.imgURL2&quot;&gt;
+              &lt;/mat-form-field&gt;
+              &lt;br&gt;
+              &lt;br&gt;
+              &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                &lt;mat-label&gt;Description:&lt;/mat-label&gt;
+                &lt;textarea matInput matInput required placeholder&#x3D;&quot;Description:&quot; value&#x3D;&quot;Description:&quot;
+                  id&#x3D;&quot;hotelDescription&quot; name&#x3D;&quot;description&quot; [(ngModel)]&#x3D;&quot;hotel1.description&quot;&gt;&lt;/textarea&gt;
+              &lt;/mat-form-field&gt;
+              &lt;br&gt;
+              &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                &lt;mat-label&gt;Rooms:&lt;/mat-label&gt;
+                &lt;input required type&#x3D;&quot;number&quot; matInput matInput placeholder&#x3D;&quot;Rooms:&quot; value&#x3D;&quot;Rooms:&quot; id&#x3D;&quot;hotelRooms&quot;
+                  name&#x3D;&quot;rooms&quot; [(ngModel)]&#x3D;&quot;hotel1.rooms&quot;&gt;
+              &lt;/mat-form-field&gt;
+              &lt;br&gt;
+              &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                &lt;mat-label&gt;Stars:&lt;/mat-label&gt;
+                &lt;input required max&#x3D;&quot;5&quot; type&#x3D;&quot;number&quot; matInput matInput placeholder&#x3D;&quot;Stars:&quot; value&#x3D;&quot;Stars:&quot;
+                  id&#x3D;&quot;hotelStars&quot; name&#x3D;&quot;stars&quot; [(ngModel)]&#x3D;&quot;hotel1.stars&quot;&gt;
+              &lt;/mat-form-field&gt;
+              &lt;br&gt;
+              &lt;button type&#x3D;&quot;submit&quot; onclick&#x3D;&quot;$(&#x27;.modal&#x27;).modal(&#x27;hide&#x27;)&quot; (click)&#x3D;&quot;load()&quot; mat-raised-button
+                class&#x3D;&quot;btn&quot;&gt;Add
+                hotel&lt;/button&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Close&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+  &lt;div *ngIf&#x3D;&quot;selectedHotel&quot;&gt;
+    &lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;exampleModal&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;exampleModalLabel&quot;
+      aria-hidden&#x3D;&quot;true&quot;&gt;
+      &lt;div class&#x3D;&quot;modal-dialog&quot; role&#x3D;&quot;document&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+          &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+            &lt;h2 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;exampleModalLabel&quot;&gt;{{selectedHotel.name}}&lt;/h2&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+              &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;modal-body&quot; style&#x3D;&quot;background-color: #a7dfc8e1&quot;&gt;
+            &lt;p&gt;Location: {{selectedHotel.location}}&lt;/p&gt;
+            &lt;br&gt;
+            &lt;img mat-card-md-image src&#x3D;&quot;{{ selectedHotel.imgURL }}&quot; width&#x3D;&quot;300px&quot;&gt;
+            &lt;br&gt;
+            &lt;br&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;selectedHotel.stars &gt;&#x3D; 1 &quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;selectedHotel.stars &gt;&#x3D; 2 &quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;selectedHotel.stars &gt;&#x3D; 3 &quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;selectedHotel.stars &gt;&#x3D; 4 &quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;selectedHotel.stars &gt;&#x3D; 5 &quot; class&#x3D;&quot;yellow-icon&quot;&gt;star&lt;/mat-icon&gt;
+
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - selectedHotel.stars &gt;&#x3D; 1 &quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - selectedHotel.stars &gt;&#x3D; 2 &quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - selectedHotel.stars &gt;&#x3D; 3 &quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - selectedHotel.stars &gt;&#x3D; 4 &quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;mat-icon *ngIf&#x3D;&quot;5 - selectedHotel.stars &gt;&#x3D; 5 &quot;&gt;star_border&lt;/mat-icon&gt;
+            &lt;br&gt;
+            &lt;p&gt;Description: {{selectedHotel.description}}&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Close&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./hotel-list.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">html{
+    background-color: rgb(226, 240, 226);
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 275%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 134, 80, 1) 25%, rgba(101, 183, 150, 1) 100%);
+    background-size: 100%;
+    font-weight: bolder;
+    
+}
+h2{
+    color: #2d7459;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.example-card {
+    width: 350px;
+    width: 350px;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}
+
+button {
+    margin-right: 20px;
+    background-color: #479676;
+    
+}
+.btn{
+    margin-bottom: 2rem;
+}
+
+.row {
+    justify-content: space-around;
+  
+}
+
+.card {
+    background-color: #8fdabce1;
+    width: fit-content;
+    margin: 1em;
+   
+   
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #57b992e3;
+}
+
+button:hover{
+    background-color: azure;
+    color: black;
+}
+
+.button {
+    outline: none;
+    border: none;
+    color: white;
+
+}
+
+.cardsContainer {
+    margin: 2rem;
+}
+
+.yellow-icon {
+    color: gold
+}
+.col.card{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*responsive design*/
+@media screen and (min-width: 1540px) {
+    
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container-fluid" style="border-radius: 10px; background-color: rgb(226, 240, 226);">  <!--<div class="cardsContainer">    <mat-grid-list cols="3" rowHeight="1:2">      <mat-grid-tile *ngFor="let hotel of hotels" (click)="selectHotel(hotel)" data-toggle="modal" data-target="#exampleModal">        <div class="card col" id="myCard">          <br>          <h2 class="card-text">{{ hotel.name }}</h2>         <br>         <img mat-card-md-image src="{{ hotel.imgURL }}" height="300px">         <br>          <div class="card-body">            <h3 class="card-text">Location: {{ hotel.location }}</h3>                        <h4 class="card-text">Price: $ {{ hotel.price}} </h4>                        <h4 class="card-text">Rooms: {{ hotel.rooms }}</h4>                        <mat-icon *ngIf="hotel.stars >= 1" class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="hotel.stars >= 2" class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="hotel.stars >= 3" class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="hotel.stars >= 4" class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="hotel.stars >= 5" class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="5 - hotel.stars >= 1">star_border</mat-icon>            <mat-icon *ngIf="5 - hotel.stars >= 2">star_border</mat-icon>            <mat-icon *ngIf="5 - hotel.stars >= 3">star_border</mat-icon>            <mat-icon *ngIf="5 - hotel.stars >= 4">star_border</mat-icon>            <mat-icon *ngIf="5 - hotel.stars >= 5">star_border</mat-icon>            <mat-card-actions>              <br>              <br>              <button mat-flat-button class="btn" routerLink="/this-hotel" (click)="heroService.chooseHotel(hotel)" >More Info</button>              <br>            </mat-card-actions>          </div>        </div>      </mat-grid-tile>    </mat-grid-list>  </div>-->  <div class="container-fluid">    <button mat-flat-button class="btn" data-toggle="modal" data-target="#exampleModal1">Add Hotel from this      page</button>    <div class="row">      <div class="col-lg-4 col-md-6 col-xs-1" *ngFor="let hotel of hotels" (click)="selectHotel(hotel)" data-toggle="modal" data-target="#exampleModal">        <div class="card" style="width: 18rem;">          <h2 class="card-title">{{ hotel.name }}</h2>          <img class="card-img-top" src="{{ hotel.imgURL }}" height="250px" alt="Card image cap">          <div class="card-body">            <h3 class="card-text">Location: {{ hotel.location }}</h3>                        <h4 class="card-text">Price: $ {{ hotel.price}} </h4>                        <h4 class="card-text">Rooms: {{ hotel.rooms }}</h4>                        <mat-icon *ngIf="hotel.stars >= 1" class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="hotel.stars >= 2" class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="hotel.stars >= 3" class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="hotel.stars >= 4" class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="hotel.stars >= 5" class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="5 - hotel.stars >= 1">star_border</mat-icon>            <mat-icon *ngIf="5 - hotel.stars >= 2">star_border</mat-icon>            <mat-icon *ngIf="5 - hotel.stars >= 3">star_border</mat-icon>            <mat-icon *ngIf="5 - hotel.stars >= 4">star_border</mat-icon>            <mat-icon *ngIf="5 - hotel.stars >= 5">star_border</mat-icon>                        <br>              <button mat-flat-button class="btn" routerLink="/this-hotel" (click)="heroService.chooseHotel(hotel)" >More Info</button>              <br>          </div>        </div>      </div>    </div>  </div><div class="container-fluid cardsContainer">  <button mat-flat-button color="warn" class="btn" (click)="this.heroService.cleanAll(); load()">Clear All</button>  <div>    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"      aria-hidden="true">      <div class="modal-dialog" role="document">        <div class="modal-content">          <div class="modal-header">            <h5 class="modal-title" id="exampleModalLabel">Add Hotel</h5>            <button type="button" class="close" data-dismiss="modal" aria-label="Close">              <span aria-hidden="true">&times;</span>            </button>          </div>          <div class="modal-body">            <form class="example-form" #hotelForm="ngForm" (ngSubmit)="onSubmit()">              <mat-form-field class="example-full-width">                <mat-label>hotel Name:</mat-label>                <input matInput required placeholder="Name:" value="Name:" id="hotelName" name="name"                  [(ngModel)]="hotel1.name">              </mat-form-field>              <br>              <mat-form-field class="example-full-width">                <mat-label>hotel Location:</mat-label>                <input matInput required placeholder="Location:" value="Location:" id="hotelLocation" name="location"                  [(ngModel)]="hotel1.location">              </mat-form-field>              <br>              <mat-form-field class="example-full-width">                <mat-label>Price:</mat-label>                <input matInput required type="number" matInput placeholder="Price:" value="Price:" id="hotelPrice"                  name="price" [(ngModel)]="hotel1.price">              </mat-form-field>              <br>              <mat-form-field class="example-full-width">                <mat-label>Main Image URL:</mat-label>                <input matInput required type="text" matInput placeholder="URL:" value="URL:" id="imgURL" name="imgURL"                  [(ngModel)]="hotel1.imgURL">              </mat-form-field>              <br>              <mat-form-field class="example-full-width">                <mat-label>Second URL:</mat-label>                <input matInput type="text" required matInput placeholder="URL:" value="URL:" id="imgURL1"                  name="imgURL1" [(ngModel)]="hotel1.imgURL1">              </mat-form-field>              <br>              <mat-form-field class="example-full-width">                <mat-label>Third URL:</mat-label>                <input matInput type="text" required matInput placeholder="URL:" value="URL:" id="imgURL2"                  name="imgURL2" [(ngModel)]="hotel1.imgURL2">              </mat-form-field>              <br>              <br>              <mat-form-field class="example-full-width">                <mat-label>Description:</mat-label>                <textarea matInput matInput required placeholder="Description:" value="Description:"                  id="hotelDescription" name="description" [(ngModel)]="hotel1.description"></textarea>              </mat-form-field>              <br>              <mat-form-field class="example-full-width">                <mat-label>Rooms:</mat-label>                <input required type="number" matInput matInput placeholder="Rooms:" value="Rooms:" id="hotelRooms"                  name="rooms" [(ngModel)]="hotel1.rooms">              </mat-form-field>              <br>              <mat-form-field class="example-full-width">                <mat-label>Stars:</mat-label>                <input required max="5" type="number" matInput matInput placeholder="Stars:" value="Stars:"                  id="hotelStars" name="stars" [(ngModel)]="hotel1.stars">              </mat-form-field>              <br>              <button type="submit" onclick="$(\'.modal\').modal(\'hide\')" (click)="load()" mat-raised-button                class="btn">Add                hotel</button>            </form>          </div>          <div class="modal-footer">            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>          </div>        </div>      </div>    </div>  </div>  <div *ngIf="selectedHotel">    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"      aria-hidden="true">      <div class="modal-dialog" role="document">        <div class="modal-content">          <div class="modal-header">            <h2 class="modal-title" id="exampleModalLabel">{{selectedHotel.name}}</h2>            <button type="button" class="close" data-dismiss="modal" aria-label="Close">              <span aria-hidden="true">&times;</span>            </button>          </div>          <div class="modal-body" style="background-color: #a7dfc8e1">            <p>Location: {{selectedHotel.location}}</p>            <br>            <img mat-card-md-image src="{{ selectedHotel.imgURL }}" width="300px">            <br>            <br>            <mat-icon *ngIf="selectedHotel.stars >= 1 " class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="selectedHotel.stars >= 2 " class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="selectedHotel.stars >= 3 " class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="selectedHotel.stars >= 4 " class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="selectedHotel.stars >= 5 " class="yellow-icon">star</mat-icon>            <mat-icon *ngIf="5 - selectedHotel.stars >= 1 ">star_border</mat-icon>            <mat-icon *ngIf="5 - selectedHotel.stars >= 2 ">star_border</mat-icon>            <mat-icon *ngIf="5 - selectedHotel.stars >= 3 ">star_border</mat-icon>            <mat-icon *ngIf="5 - selectedHotel.stars >= 4 ">star_border</mat-icon>            <mat-icon *ngIf="5 - selectedHotel.stars >= 5 ">star_border</mat-icon>            <br>            <p>Description: {{selectedHotel.description}}</p>          </div>          <div class="modal-footer">            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>          </div>        </div>      </div>    </div>  </div></div></div></div>'
+    var COMPONENTS = [{'name': 'AddHotelComponent', 'selector': 'app-add-hotel'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HotelListComponent', 'selector': 'app-hotel-list'},{'name': 'LogInComponent', 'selector': 'app-log-in'},{'name': 'SignUpComponent', 'selector': 'app-sign-up'},{'name': 'ThisHotelComponent', 'selector': 'app-this-hotel'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HotelListComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HotelListComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

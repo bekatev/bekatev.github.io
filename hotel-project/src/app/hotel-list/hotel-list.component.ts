@@ -49,6 +49,7 @@ export class HotelListComponent implements OnInit {
   };
   constructor(public heroService: HeroService,private router: Router) {
     this.hotels = JSON.parse(localStorage.getItem('hotels') || '{}');
+
   }
 
   ngOnInit(): void {
@@ -60,7 +61,7 @@ export class HotelListComponent implements OnInit {
 
   load(): void{
     window.location.reload();
-  }
+}
 
   onSubmit(){
     this.heroService.createHotels(this.hotel1);

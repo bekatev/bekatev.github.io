@@ -1,3 +1,63 @@
-footer p{
-  font-size: 15px;
+mat-toolbar {
+    background-color: transparent;
+}
+
+.overallFooterContainer {
+    display: flex;
+    padding: 2rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContainer {
+    background-color: rgb(247, 247, 247);
+    color: #65b796;
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 110px 16px rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0px 0px 110px 16px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0px 0px 110px 16px rgba(0, 0, 0, 0.19);
+}
+
+.socialMedia {
+  
+    width: 100%;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.socialMediaWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 100%;
+}
+
+.socialIconLink {
+    color: #65b796;
+    font-size: 1.5rem;
+}
+
+
+/* Footer CSS */
+@media screen and (max-width: 1140px) {
+    .socialMediaWrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .socialMediaWrap {
+        flex-direction: column;
+    }
 }

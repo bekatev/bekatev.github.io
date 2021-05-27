@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "hotel-project-59bd6": {
+      "hosting": {
+        "hotel-project": [
+          "hotel-project-59bd6"
+        ]
+      }
+    }
+  }
+}

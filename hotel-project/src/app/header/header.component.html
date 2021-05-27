@@ -1,26 +1,19 @@
 <p>
-  <mat-toolbar>
+    <mat-toolbar>
+        <button mat-button [matMenuTriggerFor]="menu">
+  <mat-icon>menu</mat-icon>
+</button>
+        <mat-menu #menu="matMenu">
+            <button *ngIf="!inSystem()" routerLink="/sign-up" mat-menu-item>Sign Up</button>
+            <button *ngIf="!inSystem()" routerLink="/log-in" mat-menu-item>Log In</button>
+            <button *ngIf="inSystem()" routerLink="/log-in" mat-menu-item>Log Out</button>
+            <button *ngIf="this.heroService.loggedIn || inSystem()" routerLink="/add-hotel" mat-menu-item>Add Hotel</button>
+            <button *ngIf="this.heroService.loggedIn || inSystem()" routerLink="/hotel-list" mat-menu-item>Hotel List</button>
+        </mat-menu>
 
 
-  <button mat-button [matMenuTriggerFor]="menu">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <mat-menu #menu="matMenu">
-    <button routerLink="/sign-up" mat-menu-item>Sign Up</button>
-    <button routerLink="/log-in" mat-menu-item>Log In</button>
-    <button *ngIf="this.heroService.loggedIn" routerLink="/add-hotel" mat-menu-item>Add Hotel</button>
-    <button *ngIf="this.heroService.loggedIn" routerLink="/hotel-list" mat-menu-item>Hotel List</button>
-  </mat-menu>
+        <span><a routerLink="/hotel-list"><img src="../../assets/logo.png" style="width: 9em; margin-right: 1em;"></a></span>
+        <span class="example-spacer"></span>
 
-
-  <span>Hotels App</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-   <mat-icon>share</mat-icon>
- </button>
-</mat-toolbar>
+    </mat-toolbar>
 </p>
-

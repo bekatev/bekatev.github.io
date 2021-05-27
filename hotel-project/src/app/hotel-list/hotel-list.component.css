@@ -1,24 +1,88 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
-
-html {
-  font-family: 'Montserrat', sans-serif;
+html{
+    background-color: rgb(226, 240, 226);
 }
 
 h1 {
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 275%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 134, 80, 1) 25%, rgba(101, 183, 150, 1) 100%);
+    background-size: 100%;
+    font-weight: bolder;
+    
 }
-.example-card {
-  max-width: 400px;
-  min-width: 400px;
-  margin: 10px;
-}
-button{
-  margin-right: 20px;
-}
-.yellow-icon {
-  color:gold
+h2{
+    color: #2d7459;
+    font-weight: 700;
+    margin-top: 2rem;
 }
 
+.example-card {
+    width: 350px;
+    width: 350px;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}
+
+button {
+    margin-right: 20px;
+    background-color: #479676;
+    
+}
+.btn{
+    margin-bottom: 2rem;
+}
+
+.row {
+    justify-content: space-around;
+  
+}
+.carousel{
+ 
+    margin:auto;
+    
+}
+
+.card {
+    background-color: #8fdabce1;
+    width: fit-content;
+    margin: 1em;
+   
+   
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #57b992e3;
+}
+
+button:hover{
+    background-color: azure;
+    color: black;
+}
+
+.button {
+    outline: none;
+    border: none;
+    color: white;
+
+}
+
+.cardsContainer {
+    margin: 2rem;
+}
+
+.yellow-icon {
+    color: gold
+}
+.col.card{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*responsive design*/
+@media screen and (min-width: 1540px) {
+    
+}
