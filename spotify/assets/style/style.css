@@ -643,6 +643,7 @@ footer {
     width: 600px;
     margin-bottom: 0;
   }
+ 
   /*CIRCLES MEDIA QUERY*/
   .circle-xs-green {
     width: 300px;
@@ -692,6 +693,9 @@ footer {
 @media (max-width: 768px) {
   .menu-wrap {
     width: 80vw;
+  }
+  .circles{
+    margin-top: auto;
   }
   .menu-wrap .toggle-button {
     margin-right: 20px;
@@ -908,6 +912,13 @@ footer {
     padding: 15px 26vw;
     margin: 19px -1px 0px -1px;
   }
+  .xsmall-text {
+    display: none;
+  }
+  .large-text{
+    font-size: 80%;
+    margin-top: -50px;
+  }
 }
 @media (max-width: 456px) {
   .footer-end-nav ul {
@@ -941,6 +952,8 @@ footer {
     width: 100px;
     margin-bottom: 0;
   }
-
+  .menu-text-lg{
+    font-size: 80%;
+  }
 }
 
