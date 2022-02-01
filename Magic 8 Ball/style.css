@@ -1,0 +1,64 @@
+.container {
+  width: 500px;
+  text-align: center;
+  margin-top: 100px;
+  align-items: center;
+}
+body{
+    background-color: #f7f7f7; 
+}
+/*Answer page style*/
+p{
+    font-size: 50px;
+    font-weight: bold;
+    color: #f0ad4e;
+}
+.askAgain{
+    margin-top: 200px;
+}
+#loader {
+  position: absolute;
+  left: 54%;
+  top: 54%;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  margin: -76px 0 0 -76px;
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid peru;
+  animation: spin 2s linear infinite;
+}
+#loaderText{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 200px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-bottom {
+  position: relative;
+  animation-name: animatebottom;
+  animation-duration: 2s;
+  bottom: -200px;
+}
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: -200px;
+    opacity: 1;
+  }
+}
+#myDiv {
+  display: none;
+  text-align: center;
+}
