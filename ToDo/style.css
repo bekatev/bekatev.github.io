@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  background-color: #f9844a;
+}
+.fa-plus-square {
+  color: #43aa8b;
+}
+.fa-trash-alt {
+  color: #f94144;
+  font-size: 20px;
+  margin-top: 10.5px;
+  margin-right: -50px;
+}
+.fa-check-square {
+  color: #90be6d;
+  font-size: 23px;
+  margin-top: 9px;
+  margin-right: -10px;
+}
+h1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  margin-top: 80px;
+  font-size: 40px;
+  color: white;
+}
+.completed-task {
+  background-color: #43aa8b;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.list-item {
+  background-color: wheat;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.list-item button,
+.completed-task button {
+  float: right;
+  border: none;
+  width: 50px;
+  outline: none;
+  border-radius: 4px;
+}
+.completed-task button {
+  background-color: #43aa8b;
+}
+.complete-button {
+  background-color: wheat;
+}
+.remove-button {
+  background-color: wheat;
+}
+ul {
+  list-style: none;
+  width: 410px;
+  margin-left: -40px;
+  font-size: 30px;
+  font-family: "Nunito", sans-serif;
+}
+form {
+  margin-top: 20px;
+}
+
+form,
+.list-cont {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+form input,
+form button {
+  background: white;
+  border: none;
+  font-size: 30px;
+  padding: 2px 18px;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  border-radius: 4px;
+}
+form button {
+  margin-left: -10px;
+}
+
+.date-class {
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  background-color: #f94144;
+  margin-top: 4px;
+  margin-right: 4px;
+  justify-content: center;
+
+}
+#calendar {
+  font-size: 17px;
+}
+.cal input {
+  background: white;
+  border: none;
+  font-size: 30px;
+  padding: 2px 18px;
+  outline: none;
+  border-radius: 4px;
+}
+.cal {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
